@@ -1,17 +1,17 @@
 export type Lang = "en" | "vi";
 export const release = {
   version: "1.2.1",
-  build: 58,
-  bytes: 138689263,
+  build: 59,
+  bytes: 138662664,
   minimumAndroid: "7.0",
   date: "2026-10-08",
-  commit: "952f483ca500679a80ca2c02fc7da687434053aa",
-  sha256: "8d9afa9b7dda033d97eb6a029384c10c48b9ab1cfb65f2f89f21561e5238a9e2",
-  filename: "Abyss-Adventure-1.2.1-58-Complete-Android.apk",
-  tag: "android-1.2.1-58-complete",
+  commit: "f5b89ce30c69c88b9b94d45782e295c1fd546457",
+  sha256: "7be2b0d8430f043fd1ca4c84300498cf7270f5933b6dabc211ead22aa17a52fb",
+  filename: "Abyss-Adventure-1.2.1-59-Public-Android.apk",
+  tag: "android-1.2.1-59-public",
   repository: "https://github.com/abyss-adventure/abyss-adventure.github.io",
   source:
-    "https://github.com/haohao2766-sudo/ABYSS-ADVENTURE/tree/952f483ca500679a80ca2c02fc7da687434053aa",
+    "https://github.com/haohao2766-sudo/ABYSS-ADVENTURE/tree/f5b89ce30c69c88b9b94d45782e295c1fd546457",
 };
 export const releaseUrl = `${release.repository}/releases/tag/${release.tag}`;
 export const downloadUrl = `${release.repository}/releases/download/${release.tag}/${release.filename}`;
@@ -219,7 +219,7 @@ export const copy = {
     finalTitle: "How deep\nwill you go?",
     preview: "Android — Available",
     previewNote:
-      "Debug-signed testing build with Test Tools. Not a production-stable release.",
+      "Debug-signed Android build. Test Tools are disabled in this public build; it is not production-signed.",
     download: "Download for Android",
     releaseNotes: "Release notes",
     android: "Android",
@@ -435,7 +435,7 @@ export const copy = {
     finalTitle: "Bạn sẽ đi\nsâu đến đâu?",
     preview: "Android — Có thể tải xuống",
     previewNote:
-      "Bản kiểm thử có Công cụ kiểm thử, ký bằng khóa debug. Chưa phải bản phát hành ổn định.",
+      "Bản Android ký bằng khóa debug. Công cụ kiểm thử đã bị tắt trong bản công khai này; APK chưa được ký phát hành.",
     download: "Tải xuống cho Android",
     releaseNotes: "Ghi chú bản phát hành",
     android: "Android",

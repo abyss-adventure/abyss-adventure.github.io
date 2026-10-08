@@ -4,6 +4,8 @@ Abyss Adventure — a collaborative dark-fantasy dungeon RPG project by Phi Nguy
 
 **Live:** https://abyss-adventure.github.io/
 
+Current Android public build: **1.2.1 (59)**. Test Tools are disabled in its public bundle. The APK is debug-signed, not production-signed. See [the release](https://github.com/abyss-adventure/abyss-adventure.github.io/releases/tag/android-1.2.1-59-public) for the APK and SHA-256.
+
 ## Run
 
 Node 22.12+ (Node 24 used for verification).
