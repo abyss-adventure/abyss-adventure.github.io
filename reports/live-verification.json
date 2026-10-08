@@ -1,8 +1,42 @@
 {
   "url": "https://abyss-adventure.github.io/",
-  "httpStatus": 200,
-  "script": "/assets/index-D1hudu8k.js",
-  "css": "/assets/index-BS6Y41tX.css",
-  "bundleMatchesLocal": true,
-  "sha256": "640a740d4f078ef5186f9d55ce8b971b678b1ca34fb6f4f465c7e6854318d5bd"
+  "verifiedAt": "2026-10-08T01:47:10.014Z",
+  "desktopAndMobile": [
+    {
+      "viewport": "desktop",
+      "httpStatus": 200,
+      "metadata": {
+        "lang": "en",
+        "canonical": "https://abyss-adventure.github.io/",
+        "ogUrl": "https://abyss-adventure.github.io/",
+        "ogImage": "https://abyss-adventure.github.io/media/social.jpg",
+        "title": "Abyss Adventure — A world built one layer at a time"
+      },
+      "errors": [],
+      "failedResources": []
+    },
+    {
+      "viewport": "mobile",
+      "httpStatus": 200,
+      "metadata": {
+        "lang": "vi",
+        "canonical": "https://abyss-adventure.github.io/",
+        "ogUrl": "https://abyss-adventure.github.io/",
+        "ogImage": "https://abyss-adventure.github.io/media/social.jpg",
+        "title": "Abyss Adventure — A world built one layer at a time"
+      },
+      "errors": [],
+      "failedResources": []
+    }
+  ],
+  "script": "/assets/index-D0eBrF18.js",
+  "css": "/assets/index-Dhlu_kZQ.css",
+  "liveBundlesMatchProduction": {
+    "js": "1c66ce1af446a1ae014c1de756aab9090d783c75a79ad111aa34ec97013ece71",
+    "css": "839dbe6df7d24d151f7007acedb3a6c402b9a15f0e06d371ae565c66cbcc58ef"
+  },
+  "socialImageStatus": 200,
+  "downloadUrl": "https://github.com/abyss-adventure/abyss-adventure.github.io/releases/download/android-preview-1.2.1-57-d0bcd5a/Abyss-Adventure-1.2.1-57-project1-d0bcd5a-PhiTest.apk",
+  "noLegacyPagesPrefix": true,
+  "mobileLanguagePersistence": "vi survives reload"
 }

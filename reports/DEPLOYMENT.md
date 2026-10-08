@@ -15,7 +15,7 @@ Verified 8 October 2026, Asia/Ho_Chi_Minh.
 - Local remote `origin`: `https://github.com/abyss-adventure/abyss-adventure.github.io.git`.
 - `main`, full existing git history, Pages Actions workflow, website assets, EN/VI content, QA files, and prerelease asset remain present. Source repo had zero issues/assignees at transfer time.
 - Vite now builds for `/`. All runtime images use `import.meta.env.BASE_URL`; canonical/OG/Twitter/JSON-LD, icon, sitemap, robots, and APK release links use the organization root.
-- Pages is configured with GitHub Actions. The organization-root build has 385 passing checks; eight Chrome/WebKit desktop/mobile viewport cases pass locally, including refresh, localization, media, landscape, touch, motion, audio control, download metadata and iOS Coming Soon. Final live bundle verification is recorded in `live-verification.json` after the Actions deployment.
+- Pages is configured with GitHub Actions. The organization-root build has 385 passing checks; eight Chrome/WebKit desktop/mobile viewport cases pass locally, including refresh, localization, media, landscape, touch, motion, audio control, download metadata and iOS Coming Soon. GitHub Pages workflow [37714553488](https://github.com/abyss-adventure/abyss-adventure.github.io/actions/runs/37714553488) completed successfully for code commit `822cfb495fbcbc58bbaf64b52f9b9d52e364d13f`. The live page, assets, metadata and desktop/mobile language persistence were then verified against that build; see `live-verification.json`.
 
 ## Android APK
 
@@ -25,9 +25,9 @@ GitHub release asset digest remains SHA-256 `916108e500cf96e436efad29bb31a96c116
 
 ## Phi and game repository
 
-The current member list contains `HenryParker37-VIP`; `haohao2766-sudo` is not an accepted member. Invitation status is not available through the current CLI token scopes. Do not treat an invitation as membership. Organization owner can check/invite under Organization Settings → People. Keep Phi at Member unless the owner explicitly approves another role.
+The current member list contains `HenryParker37-VIP`; `haohao2766-sudo` is not an accepted member. Whether a pending invitation exists is not visible with the current CLI token scopes (`admin:org` is not granted). Do not treat an invitation as membership. Organization owner can check/invite under Organization Settings → People. Keep Phi at Member unless the owner explicitly approves another role.
 
-Game repository is still `haohao2766-sudo/ABYSS-ADVENTURE`. Current account permissions are `push: true`, `admin: false`. It was not touched and its local remote remains on Phi's repository. Phi should join `abyss-adventure` with permission to create repositories, then transfer from game repository Settings → General → Danger Zone → Transfer ownership, entering `abyss-adventure` and confirming `ABYSS-ADVENTURE`. If the organization requires approvals, an organization owner completes that step.
+Game repository is still `haohao2766-sudo/ABYSS-ADVENTURE`. Current account permissions are `push: true`, `admin: false`. It was not touched and its local remote remains on Phi's repository. If Phi has not received an invitation, an organization owner can invite `haohao2766-sudo` at Organization Settings → People → Invite member. He should accept and remain a Member, with permission to create repositories. Then, as repository owner, Phi uses game repository Settings → General → Danger Zone → Transfer ownership, selects `abyss-adventure`, and confirms `ABYSS-ADVENTURE`. An organization owner approves only if GitHub prompts for organizational approval. Do not elevate him to Owner for this transfer.
 
 ## Historical baseline
 

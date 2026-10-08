@@ -36,3 +36,5 @@ User confirmed no approved quote, origin story, start reason/date, personal mile
 ## Deployment
 
 See `DEPLOYMENT.md` for final clean-checkout and live Pages checks. GitHub Releases distributes the explicitly marked Android preview; iOS has no download link.
+
+Live organization-root acceptance completed after workflow `37714553488`: root and all eight Chrome/WebKit desktop/phone/Android-sized/compact cases passed; mobile landscape passed. Desktop EN and mobile VI survive a reload. The exact deployed JS and CSS bytes match the local production build. Canonical, OpenGraph, SEO title, social image (HTTP200), release URL, original game art and zero legacy Pages asset prefix were verified. Full evidence: `live-verification.json`.
