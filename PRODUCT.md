@@ -13,7 +13,7 @@ Original game artwork is authoritative: subterranean ruins, worn iron, dark ston
 Native scrolling creates a descent: title/camera push, world exploration, creator and source-to-world reveal, classes, equipment, connected systems, real gameplay, final download. Desktop has restrained depth; mobile uses shorter scenes and touch controls. Reduced motion keeps every story beat visible. Sound is opt-in.
 
 ## Verified facts
-Game candidate 30b371d411302f9a41792d3203e018aabbee619b, version 1.2.1 build 58, package com.nah.abyssadventure, minimum Android API24. It is a debug-signed test build, not production-stable. Repository milestones include Daily integration, audio, persisted EN/VI and localization cleanup. These are code-history facts, not a full biography.
+Game candidate 952f483ca500679a80ca2c02fc7da687434053aa, version 1.2.1 build 58, package com.nah.abyssadventure, minimum Android API24. It is a debug-signed test build, not production-stable. Repository milestones include Daily integration, audio, persisted EN/VI and localization cleanup. These are code-history facts, not a full biography.
 
 ## Open creator content
 Phi's first development date, original prototype image, approved first-person quote, personal motivation and creator links are unknown. Use internal structured placeholders, editable centrally; do not invent them. User was asked for these details.

@@ -17,7 +17,7 @@ This test build includes Test Tools and is signed with the Android debug certifi
 
 ### Technical Details
 - Package: `com.nah.abyssadventure`
-- Tested source commit: `30b371d411302f9a41792d3203e018aabbee619b`
+- Tested source commit: `952f483ca500679a80ca2c02fc7da687434053aa`
 - SHA-256: `8d9afa9b7dda033d97eb6a029384c10c48b9ab1cfb65f2f89f21561e5238a9e2`
 
 ### Credits
@@ -42,7 +42,7 @@ Bản kiểm thử này có Công cụ kiểm thử và được ký bằng ch�
 
 ### Thông tin kỹ thuật
 - Gói ứng dụng: `com.nah.abyssadventure`
-- Commit mã nguồn đã kiểm thử: `30b371d411302f9a41792d3203e018aabbee619b`
+- Commit mã nguồn đã kiểm thử: `952f483ca500679a80ca2c02fc7da687434053aa`
 - SHA-256: `8d9afa9b7dda033d97eb6a029384c10c48b9ab1cfb65f2f89f21561e5238a9e2`
 
 ### Ghi công

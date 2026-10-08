@@ -5,13 +5,13 @@ export const release = {
   bytes: 138689263,
   minimumAndroid: "7.0",
   date: "2026-10-08",
-  commit: "30b371d411302f9a41792d3203e018aabbee619b",
+  commit: "952f483ca500679a80ca2c02fc7da687434053aa",
   sha256: "8d9afa9b7dda033d97eb6a029384c10c48b9ab1cfb65f2f89f21561e5238a9e2",
   filename: "Abyss-Adventure-1.2.1-58-Complete-Android.apk",
   tag: "android-1.2.1-58-complete",
   repository: "https://github.com/abyss-adventure/abyss-adventure.github.io",
   source:
-    "https://github.com/haohao2766-sudo/ABYSS-ADVENTURE/tree/30b371d411302f9a41792d3203e018aabbee619b",
+    "https://github.com/haohao2766-sudo/ABYSS-ADVENTURE/tree/952f483ca500679a80ca2c02fc7da687434053aa",
 };
 export const releaseUrl = `${release.repository}/releases/tag/${release.tag}`;
 export const downloadUrl = `${release.repository}/releases/download/${release.tag}/${release.filename}`;
