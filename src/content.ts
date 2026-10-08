@@ -1,17 +1,17 @@
 export type Lang = "en" | "vi";
 export const release = {
   version: "1.2.1",
-  build: 57,
-  bytes: 138786779,
+  build: 58,
+  bytes: 138689263,
   minimumAndroid: "7.0",
-  date: "2026-10-07",
-  commit: "d0bcd5a07f11482c97591deda95357090efb358e",
-  sha256: "916108e500cf96e436efad29bb31a96c1164faa4f490fc7cdf4aad5f6cb47933",
-  filename: "Abyss-Adventure-1.2.1-57-project1-d0bcd5a-PhiTest.apk",
-  tag: "android-preview-1.2.1-57-d0bcd5a",
+  date: "2026-10-08",
+  commit: "30b371d411302f9a41792d3203e018aabbee619b",
+  sha256: "8d9afa9b7dda033d97eb6a029384c10c48b9ab1cfb65f2f89f21561e5238a9e2",
+  filename: "Abyss-Adventure-1.2.1-58-Complete-Android.apk",
+  tag: "android-1.2.1-58-complete",
   repository: "https://github.com/abyss-adventure/abyss-adventure.github.io",
   source:
-    "https://github.com/haohao2766-sudo/ABYSS-ADVENTURE/tree/d0bcd5a07f11482c97591deda95357090efb358e",
+    "https://github.com/haohao2766-sudo/ABYSS-ADVENTURE/tree/30b371d411302f9a41792d3203e018aabbee619b",
 };
 export const releaseUrl = `${release.repository}/releases/tag/${release.tag}`;
 export const downloadUrl = `${release.repository}/releases/download/${release.tag}/${release.filename}`;
@@ -217,9 +217,9 @@ export const copy = {
     raid: "Raid combat",
     screenAlt: "Actual Abyss Adventure Android preview screen",
     finalTitle: "How deep\nwill you go?",
-    preview: "Android Preview Build",
+    preview: "Android — Available",
     previewNote:
-      "A test candidate, with test tools included. Not a stable public release.",
+      "Debug-signed testing build with Test Tools. Not a production-stable release.",
     download: "Download for Android",
     releaseNotes: "Release notes",
     android: "Android",
@@ -433,10 +433,10 @@ export const copy = {
     screenAlt:
       "Màn hình thực tế của bản thử nghiệm Abyss Adventure trên Android",
     finalTitle: "Bạn sẽ đi\nsâu đến đâu?",
-    preview: "Bản thử nghiệm Android",
+    preview: "Android — Có thể tải xuống",
     previewNote:
-      "Bản đang thử nghiệm, có kèm công cụ kiểm thử. Chưa phải bản phát hành ổn định.",
-    download: "Tải cho Android",
+      "Bản kiểm thử có Công cụ kiểm thử, ký bằng khóa debug. Chưa phải bản phát hành ổn định.",
+    download: "Tải xuống cho Android",
     releaseNotes: "Ghi chú bản phát hành",
     android: "Android",
     requirement: "Android 7.0 trở lên",

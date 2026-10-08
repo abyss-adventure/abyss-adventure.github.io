@@ -33,7 +33,7 @@ No AI-generated images are used. Social preview is an original-art composition; 
 5. Update the pinned candidate assertions in `scripts/check.mjs` only as part of an intentional release update.
 6. Verify the public download bytes/checksum and both-language metadata.
 
-Current package identity: `com.nah.abyssadventure`. Candidate contains test tools. Keep the Preview label until the owner approves stable distribution. GitHub Releases provide the APK; never commit the138.8MB binary into Git history.
+Current package identity: `com.nah.abyssadventure`. Build 58 contains Test Tools and is debug-signed. Show Android as available for testing, but state clearly that it is not production-stable. GitHub Releases provide the APK; never commit the binary into Git history.
 
 ## iOS
 
