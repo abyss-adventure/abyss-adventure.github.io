@@ -31,6 +31,9 @@ export const creatorPlaceholders = [
 export const copy = {
   en: {
     skip: "Skip to content",
+    mainNavigation: "Main navigation",
+    switchToVietnamese: "Switch to Tiếng Việt",
+    switchToEnglish: "Switch to English",
     world: "The world",
     creator: "The creator",
     play: "Get the preview",
@@ -77,6 +80,7 @@ export const copy = {
     buildNote:
       "From canonical source data to the current playable world. A visual explanation, not a historical prototype comparison.",
     sourceLabel: "Canonical class paths",
+    excerpt: "excerpt",
     gameLabel: "Actual Android preview capture",
     milestoneTitle: "The recent development trail",
     milestones: [
@@ -223,6 +227,7 @@ export const copy = {
     version: "Version",
     built: "Build",
     checksum: "SHA-256",
+    commitLabel: "Commit",
     ios: "Abyss Adventure for iOS",
     soon: "Coming soon",
     iosNote: "The descent continues. A public iOS build is not available yet.",
@@ -233,6 +238,9 @@ export const copy = {
   },
   vi: {
     skip: "Đến nội dung chính",
+    mainNavigation: "Điều hướng chính",
+    switchToVietnamese: "Chuyển sang Tiếng Việt",
+    switchToEnglish: "Chuyển sang tiếng Anh",
     world: "Thế giới",
     creator: "Tác giả",
     play: "Tải bản thử nghiệm",
@@ -280,6 +288,7 @@ export const copy = {
     buildNote:
       "Từ dữ liệu gốc đến thế giới đang chơi được. Đây là minh họa quá trình xây dựng, không phải so sánh với nguyên mẫu lịch sử.",
     sourceLabel: "Nhánh lớp nhân vật trong dữ liệu gốc",
+    excerpt: "trích đoạn",
     gameLabel: "Ảnh chụp bản thử nghiệm Android thực tế",
     milestoneTitle: "Những dấu mốc phát triển gần đây",
     milestones: [
@@ -426,6 +435,7 @@ export const copy = {
     version: "Phiên bản",
     built: "Bản dựng",
     checksum: "SHA-256",
+    commitLabel: "Mã commit",
     ios: "Abyss Adventure cho iOS",
     soon: "Sắp ra mắt",
     iosNote: "Hành trình vẫn tiếp tục. Hiện chưa có bản iOS công khai.",

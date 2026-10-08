@@ -23,7 +23,7 @@ for(const kind of ['chrome','webkit']){
  await p.locator('.technical summary').click();assert.ok((await p.locator('.technical').innerText()).includes('916108e500cf96e436efad29bb31a96c1164faa4f490fc7cdf4aad5f6cb47933'));
  assert.equal(await p.locator('.creator-notebook').count(),0);
  await p.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}));await p.waitForTimeout(200);
- await p.getByRole('button',{name:'Switch to English'}).click();assert.equal(await p.locator('html').getAttribute('lang'),'en');
+ await p.locator('.language').click();assert.equal(await p.locator('html').getAttribute('lang'),'en');
  if(name==='iphone'){await p.getByRole('button',{name:'Sound off',exact:true}).click();await p.waitForTimeout(1300);assert.equal(await p.locator('.sound').getAttribute('aria-pressed'),'true');await p.locator('.sound').click();assert.equal(await p.locator('.sound').getAttribute('aria-pressed'),'false');await p.setViewportSize({width:844,height:390});assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,'landscape overflow');}
  assert.deepEqual(errors,[],'runtime errors');assert.deepEqual(failed,[],'resource failures');
  results.push({browser:kind,viewport:name,passed:true,runtimeErrors:errors,failedResources:failed});await context.close();

@@ -51,6 +51,23 @@ function Sound({ on }: { on: boolean }) {
     </svg>
   );
 }
+function Globe() {
+  return (
+    <svg
+      className="language-icon"
+      width="17"
+      height="17"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.35"
+      aria-hidden="true"
+    >
+      <circle cx="12" cy="12" r="9" />
+      <path d="M3.5 12h17M12 3c2.3 2.5 3.4 5.5 3.4 9s-1.1 6.5-3.4 9c-2.3-2.5-3.4-5.5-3.4-9S9.7 5.5 12 3Z" />
+    </svg>
+  );
+}
 function Art({
   name,
   alt = "",
@@ -101,11 +118,23 @@ export default function App() {
   const audio = useRef<HTMLAudioElement | null>(null);
   const soundWanted = useRef(false);
   const root = useRef<HTMLDivElement>(null);
-  useEffect(() => {
+  const scrollBeforeLanguageChange = useRef<number | null>(null);
+  function switchLanguage() {
+    scrollBeforeLanguageChange.current = window.scrollY;
+    setLang((current) => (current === "en" ? "vi" : "en"));
+  }
+  useLayoutEffect(() => {
     document.documentElement.lang = lang;
     try {
       localStorage.setItem("abyss-site-language", lang);
     } catch {}
+    const previousScroll = scrollBeforeLanguageChange.current;
+    if (previousScroll !== null) {
+      ScrollTrigger.refresh();
+      window.scrollTo({ top: previousScroll, behavior: "instant" });
+      scrollBeforeLanguageChange.current = null;
+      return;
+    }
     const frame = requestAnimationFrame(() => ScrollTrigger.refresh());
     return () => cancelAnimationFrame(frame);
   }, [lang]);
@@ -260,22 +289,20 @@ export default function App() {
         <a className="brand" href="#surface" aria-label="Abyss Adventure">
           <Art name="logo" eager />
         </a>
-        <nav
-          aria-label={lang === "en" ? "Main navigation" : "Điều hướng chính"}
-        >
+        <nav aria-label={t.mainNavigation}>
           <a href="#world">{t.world}</a>
           <a href="#creator">{t.creator}</a>
         </nav>
         <div className="header-actions">
           <button
             className="language"
-            onClick={() => setLang(lang === "en" ? "vi" : "en")}
-            aria-label={
-              lang === "en" ? "Switch to Tiếng Việt" : "Switch to English"
-            }
+            onClick={switchLanguage}
+            aria-label={lang === "en" ? t.switchToVietnamese : t.switchToEnglish}
+            title={lang === "en" ? t.switchToVietnamese : t.switchToEnglish}
           >
+            <Globe />
             {lang === "en" ? "EN" : "VI"}
-            <span aria-hidden="true"> / </span>
+            <span className="language-separator" aria-hidden="true"> / </span>
             <span className="inactive">{lang === "en" ? "VI" : "EN"}</span>
           </button>
           <button
@@ -390,7 +417,7 @@ export default function App() {
                   </pre>
                   <span>
                     packages/content/data.json ·{" "}
-                    {lang === "en" ? "excerpt" : "trích đoạn"}
+                    {t.excerpt}
                   </span>
                 </div>
                 <div className="evolution-game">
@@ -627,7 +654,7 @@ export default function App() {
                       </dd>
                     </div>
                     <div>
-                      <dt>Commit</dt>
+                      <dt>{t.commitLabel}</dt>
                       <dd>
                         <code>{release.commit}</code>
                       </dd>

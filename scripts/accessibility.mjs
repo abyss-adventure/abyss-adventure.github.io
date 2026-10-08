@@ -1,7 +1,8 @@
 import {chromium} from 'playwright';import AxeBuilder from '@axe-core/playwright';import fs from 'node:fs/promises';
 const b=await chromium.launch({channel:'chrome'});const output=[];
+const url=process.env.QA_URL||'http://127.0.0.1:4174/';
 for(const [lang,width] of [['en',1440],['vi',390]]){
- const context=await b.newContext({viewport:{width,height:900},reducedMotion:'reduce'});const p=await context.newPage();await p.goto('http://127.0.0.1:4174/');if(lang==='vi')await p.getByRole('button',{name:'Switch to Tiếng Việt'}).click();
+ const context=await b.newContext({viewport:{width,height:900},reducedMotion:'reduce'});const p=await context.newPage();await p.goto(url);if(lang==='vi')await p.getByRole('button',{name:'Switch to Tiếng Việt'}).click();
  await p.evaluate(async()=>{await document.fonts.ready;const imgs=[...document.images];for(const i of imgs)i.loading='eager';await Promise.all(imgs.map(i=>i.decode().catch(()=>{})))});
  const r=await new AxeBuilder({page:p}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();output.push({lang,width,violations:r.violations});await context.close();
 }

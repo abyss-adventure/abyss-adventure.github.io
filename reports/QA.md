@@ -10,11 +10,12 @@ Rebuilt with `/`, transferred release link and organization canonical metadata. 
 
 ## Evidence
 
-- 385 content/localization/canonical-name/asset/base-path/organization-metadata assertions.
+- 403 content/localization/canonical-name/asset/base-path/organization-metadata assertions, including central-catalog checks for generic accessibility/release labels.
 - TypeScript and Vite production build.
 - Chrome and WebKit interactions: see `runtime-qa.json` for completed cases.
 - Axe WCAG2A/AA and2.1AA scan: zero violations in desktop EN and mobile VI (`accessibility.json`). Automated scanning is not a claim of complete accessibility conformance.
 - Keyboard skip link and scroll-driven title transform; direct `#download` reload: `navigation-qa.json`.
+- Language switcher QA: `language-qa.json` covers EN↔VI, reload persistence in both languages, unchanged scroll/selection/opening-animation state, uninterrupted ambience, keyboard and touch access, and five responsive viewports.
 - Audio duration144s, no autoplay, one active instance through language/navigation, mute, seek-to-loop-boundary and simulated visibility pause/resume: `audio-qa.json`. Physical speaker audibility and a continuous144s listening session were not claimed.
 - Independent creative review: ship; see `CREATIVE-REVIEW.md`.
 - Local Lighthouse:84/100/100/100; see `PERFORMANCE.md`.

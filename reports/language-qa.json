@@ -1,0 +1,38 @@
+[
+  {
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000
+      },
+      {
+        "width": 768,
+        "height": 1024
+      },
+      {
+        "width": 390,
+        "height": 844
+      },
+      {
+        "width": 412,
+        "height": 915
+      },
+      {
+        "width": 320,
+        "height": 740
+      }
+    ],
+    "switch": "EN↔VI",
+    "scrollPreserved": true,
+    "openingAnimationNotReplayed": true,
+    "languagePersistenceAfterReload": [
+      "en",
+      "vi"
+    ],
+    "ambienceContinuesWithoutRestart": true,
+    "selectedWorldAndRaidPreserved": true,
+    "keyboardAndTouch": true,
+    "headerPositionStable": true,
+    "horizontalOverflow": false
+  }
+]

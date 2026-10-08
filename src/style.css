@@ -103,7 +103,7 @@ p {
 }
 .header {
   height: 90px;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -113,7 +113,8 @@ p {
   gap: 36px;
   padding: 12px var(--gutter);
   border-bottom: 1px solid #ffffff12;
-  background: linear-gradient(#080c0d88, transparent);
+  background: linear-gradient(#080c0dcc, #080c0d92);
+  backdrop-filter: blur(8px);
 }
 .brand {
   width: 138px;
@@ -146,21 +147,50 @@ p {
   padding: 8px 0;
 }
 .language {
+  flex: 0 0 74px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
   white-space: nowrap;
+  color: var(--brass);
+  border: 1px solid #c4ad7960;
+  background: #080c0dd9;
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease;
+}
+.language-icon {
+  flex: 0 0 auto;
 }
 .inactive {
   color: var(--muted);
+  transition: color 180ms ease;
+}
+.header .language:hover {
+  color: var(--stone);
+  border-color: var(--brass);
+  background: color-mix(in srgb, var(--ink) 88%, var(--line));
+  transform: translateY(-1px);
+}
+.header .language:active {
+  transform: translateY(0);
 }
 .sound {
   display: flex;
+  flex: 0 0 110px;
   gap: 9px;
   align-items: center;
+  white-space: nowrap;
 }
 .sound span {
   font-size: 11px;
 }
 .nav-download {
   display: flex;
+  flex: 0 0 170px;
   gap: 16px;
   align-items: center;
   border-bottom: 1px solid var(--brass);
@@ -978,16 +1008,19 @@ footer > p {
 }
 @media (max-width: 1050px) {
   .header {
-    gap: 16px;
+    gap: 12px;
   }
   .header nav {
     margin-left: 0;
-    gap: 18px;
+    gap: 12px;
   }
   .header-actions {
-    gap: 17px;
+    gap: 12px;
   }
-  .sound span {
+  .header .sound {
+    flex-basis: 44px;
+  }
+  .header .sound span {
     display: none;
   }
   .evolution-sticky {
@@ -1030,6 +1063,7 @@ footer > p {
   }
   .header {
     height: 76px;
+    gap: 6px;
     padding: 8px 20px;
   }
   .brand,
@@ -1041,9 +1075,11 @@ footer > p {
     display: none;
   }
   .header-actions {
-    gap: 16px;
+    gap: 8px;
   }
   .nav-download {
+    flex-basis: 110px;
+    justify-content: flex-start;
     font-size: 10px;
     gap: 7px;
   }
@@ -1051,7 +1087,13 @@ footer > p {
     display: none;
   }
   .header .sound {
-    min-width: 28px;
+    flex-basis: 44px;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+  }
+  .header .sound span {
+    display: none;
   }
   .language {
     font-size: 10px;
@@ -1443,6 +1485,34 @@ footer > p {
     line-height: 1.8;
   }
 }
+@media (max-width: 380px) {
+  .header {
+    gap: 4px;
+    padding-inline: 12px;
+  }
+  .brand,
+  .brand img {
+    width: 76px;
+  }
+  .header-actions {
+    gap: 6px;
+  }
+  .header .language {
+    flex-basis: 50px;
+    min-width: 50px;
+    gap: 5px;
+    padding-inline: 7px;
+  }
+  .header .language .inactive {
+    display: none;
+  }
+  .header .language-separator {
+    display: none;
+  }
+  .nav-download {
+    font-size: 9px;
+  }
+}
 @media (max-height: 560px) and (orientation: landscape) {
   .surface-sticky {
     min-height: 460px;
@@ -1536,5 +1606,13 @@ footer > p {
   footer {
     padding-left: max(var(--gutter), env(safe-area-inset-left));
     padding-right: max(var(--gutter), env(safe-area-inset-right));
+  }
+}
+@media (max-width: 380px) {
+  @supports (padding: max(0px)) {
+    .header {
+      padding-left: max(12px, env(safe-area-inset-left));
+      padding-right: max(12px, env(safe-area-inset-right));
+    }
   }
 }
