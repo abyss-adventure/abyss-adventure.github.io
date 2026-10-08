@@ -41,7 +41,8 @@ export const copy = {
     soundOff: "Sound off",
     soundError: "Sound could not start. Tap to try again.",
     heroLine: "A world built one layer at a time.",
-    heroSub: "A dark-fantasy dungeon RPG by Phi Nguyễn.",
+    heroSub:
+      "Abyss Adventure — a project by Phi Nguyễn and Henry Parker. Original game concept and creative direction by Phi Nguyễn.",
     descend: "Scroll to descend",
     worldTitle: "There is always\nsomething deeper.",
     worldIntro:
@@ -73,7 +74,7 @@ export const copy = {
     ],
     originalArt: "Original game artwork · promotional composition",
     creatorTitle: "Behind the Abyss.",
-    creatorLine: "Created by Phi Nguyễn.",
+    creatorLine: "Original game concept & creative direction by Phi Nguyễn.",
     creatorIntro:
       "A world is more than its landscape. It is every small system that makes the next decision possible.",
     buildQuote: "A game doesn’t appear at once. It grows system by system.",
@@ -231,7 +232,8 @@ export const copy = {
     ios: "Abyss Adventure for iOS",
     soon: "Coming soon",
     iosNote: "The descent continues. A public iOS build is not available yet.",
-    footer: "Created by Phi Nguyễn",
+    projectCredit: "Abyss Adventure · Phi Nguyễn × Henry Parker",
+    websiteCredit: "Website by Henry Parker (Nguyen Manh Tuan Hung)",
     source: "Game source",
     back: "Back to the surface",
     mute: "Ambience is optional. Sound is off until you choose it.",
@@ -248,7 +250,8 @@ export const copy = {
     soundOff: "Bật âm thanh",
     soundError: "Chưa thể phát âm thanh. Chạm để thử lại.",
     heroLine: "Một thế giới được dựng nên qua từng lớp.",
-    heroSub: "Game nhập vai hầm ngục kỳ ảo đen tối của Phi Nguyễn.",
+    heroSub:
+      "Abyss Adventure — dự án của Phi Nguyễn và Henry Parker. Ý tưởng game gốc và định hướng sáng tạo: Phi Nguyễn.",
     descend: "Cuộn để đi sâu hơn",
     worldTitle: "Luôn có điều gì đó\nở sâu hơn.",
     worldIntro:
@@ -280,7 +283,7 @@ export const copy = {
     ],
     originalArt: "Hình ảnh gốc trong game · bố cục quảng bá",
     creatorTitle: "Phía sau Abyss.",
-    creatorLine: "Được tạo nên bởi Phi Nguyễn.",
+    creatorLine: "Ý tưởng game gốc & định hướng sáng tạo: Phi Nguyễn.",
     creatorIntro:
       "Một thế giới không chỉ có cảnh quan. Nó còn là từng hệ thống nhỏ mở ra lựa chọn tiếp theo.",
     buildQuote:
@@ -439,7 +442,8 @@ export const copy = {
     ios: "Abyss Adventure cho iOS",
     soon: "Sắp ra mắt",
     iosNote: "Hành trình vẫn tiếp tục. Hiện chưa có bản iOS công khai.",
-    footer: "Được tạo nên bởi Phi Nguyễn",
+    projectCredit: "Abyss Adventure · Phi Nguyễn × Henry Parker",
+    websiteCredit: "Website được thực hiện bởi Henry Parker (Nguyen Manh Tuan Hung)",
     source: "Mã nguồn game",
     back: "Trở về mặt đất",
     mute: "Âm thanh nền là tùy chọn. Chỉ phát khi bạn chủ động bật.",

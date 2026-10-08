@@ -345,7 +345,7 @@ export default function App() {
               <span>EN / VI · ANDROID</span>
             </div>
             <div className="edge-coordinate" aria-hidden="true">
-              ABYSS ADVENTURE / PHI NGUYỄN
+              ABYSS ADVENTURE / PHI NGUYỄN × HENRY PARKER
             </div>
           </div>
         </section>
@@ -691,8 +691,8 @@ export default function App() {
       </main>
       <footer>
         <div>
-          <strong>Abyss Adventure</strong>
-          <span>{t.footer}</span>
+          <strong>{t.projectCredit}</strong>
+          <span>{t.websiteCredit}</span>
         </div>
         <a href={release.source}>
           {t.source}

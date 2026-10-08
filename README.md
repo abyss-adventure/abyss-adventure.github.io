@@ -1,6 +1,6 @@
 # Abyss Adventure — Descent into the Abyss
 
-A bilingual, native-scroll storytelling site for Phi Nguyễn's dark-fantasy dungeon RPG.
+Abyss Adventure — a collaborative dark-fantasy dungeon RPG project by Phi Nguyễn and Henry Parker. Original game concept and creative direction by Phi Nguyễn. Official website created by Henry Parker (Nguyen Manh Tuan Hung).
 
 **Live:** https://abyss-adventure.github.io/
 
@@ -49,4 +49,4 @@ See [CONTENT-EDITING.md](CONTENT-EDITING.md). Do not rewrite the UI to change re
 
 Original game artwork is preserved, not regenerated. The source-to-world sequence is a promotional explanation, **not an invented historical prototype**. Android captures contain genuine test UI. The Android download is an explicitly marked preview/test build, not a stable release. No public iOS download is offered.
 
-Game content/art is attributed to its creator; this repository does not grant new reuse rights over the game assets.
+Game content/art is attributed to its original creator; this repository does not grant new reuse rights over the game assets. The project credit is shared by Phi Nguyễn and Henry Parker. The official website was created by Henry Parker (Nguyen Manh Tuan Hung).

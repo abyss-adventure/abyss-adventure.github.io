@@ -1,7 +1,7 @@
 # Abyss Adventure
 
 ## Product truth
-A free public storytelling website for the dark-fantasy dungeon RPG Abyss Adventure, created by Phi Nguyễn. The website introduces the world and its connected systems, then offers the current Android preview through GitHub Releases. iOS is Coming Soon; no public IPA is approved.
+A free public storytelling website for Abyss Adventure, a collaborative dark-fantasy dungeon RPG project by Phi Nguyễn and Henry Parker. Phi Nguyễn is credited with the original game concept and creative direction; Henry Parker created the official website and is a project collaborator. The website introduces the world and its connected systems, then offers the current Android preview through GitHub Releases. iOS is Coming Soon; no public IPA is approved.
 
 ## Audience and action
 First-time visitors, primarily on phones, who want to understand the world and decide whether to try the Android preview. English and Vietnamese share one site; canonical fantasy names remain English. The primary action is Download for Android.
