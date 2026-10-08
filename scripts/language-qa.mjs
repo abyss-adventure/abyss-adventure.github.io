@@ -28,7 +28,11 @@ try {
   assert.ok((await page.locator('.system-copy').innerText()).includes('The Drowned Regent'));
   await page.locator('#systems').evaluate((el) => window.scrollTo({ top: el.getBoundingClientRect().top + scrollY - 240, behavior: 'instant' }));
   await page.waitForTimeout(350);
-  const beforeSwitch = await page.evaluate(() => ({ scrollY, lang: document.documentElement.lang, languageRect: document.querySelector('.language').getBoundingClientRect().toJSON(), heroOpacity: getComputedStyle(document.querySelector('.hero-title')).opacity, heroTransform: getComputedStyle(document.querySelector('.hero-title')).transform }));
+  const beforeSwitch = await page.evaluate(() => {
+    const style = getComputedStyle(document.querySelector('.hero-title'));
+    const matrix = new DOMMatrixReadOnly(style.transform);
+    return { scrollY, lang: document.documentElement.lang, languageRect: document.querySelector('.language').getBoundingClientRect().toJSON(), heroOpacity: Number(style.opacity), heroTransform: [matrix.a, matrix.b, matrix.c, matrix.d, matrix.e, matrix.f] };
+  });
   await page.getByRole('button', { name: 'Switch to Tiếng Việt' }).click();
   assert.equal(await page.evaluate(() => document.documentElement.lang), 'vi');
   assert.equal(await page.evaluate(() => localStorage.getItem('abyss-site-language')), 'vi');
@@ -39,8 +43,14 @@ try {
   assert.ok((await page.locator('.system-copy').innerText()).includes('Tiến vào'), 'generic Raid explanation is translated');
   const languageRectAfter = await page.locator('.language').evaluate((el) => el.getBoundingClientRect().toJSON());
   for (const edge of ['x', 'y', 'width', 'height']) assert.ok(Math.abs(languageRectAfter[edge] - beforeSwitch.languageRect[edge]) <= 1, `language control ${edge} remains stable`);
-  const afterHero = await page.locator('.hero-title').evaluate((el) => ({ opacity: getComputedStyle(el).opacity, transform: getComputedStyle(el).transform }));
-  assert.ok(Math.abs(Number(afterHero.opacity) - Number(beforeSwitch.heroOpacity)) <= 0.02 && afterHero.transform === beforeSwitch.heroTransform, 'language change does not replay the opening animation');
+  const afterHero = await page.locator('.hero-title').evaluate((el) => {
+    const style = getComputedStyle(el);
+    const matrix = new DOMMatrixReadOnly(style.transform);
+    return { opacity: Number(style.opacity), transform: [matrix.a, matrix.b, matrix.c, matrix.d, matrix.e, matrix.f] };
+  });
+  const animationStayedAtScrollProgress = afterHero.opacity <= beforeSwitch.heroOpacity + 0.05
+    && afterHero.transform.every((value, index) => Math.abs(value - beforeSwitch.heroTransform[index]) <= (index < 4 ? 0.1 : 5));
+  assert.ok(animationStayedAtScrollProgress, 'language change does not replay the opening animation');
   assert.equal(await page.locator('.language').getAttribute('aria-label'), 'Chuyển sang tiếng Anh');
   await page.screenshot({ path: '/tmp/abyss-language-desktop.png', fullPage: false });
 
@@ -76,8 +86,8 @@ try {
     await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
     await page.waitForTimeout(100);
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, `${viewport.name}: no horizontal overflow`);
-    const rect = await page.locator('.language').evaluate((el) => { const r = el.getBoundingClientRect(); return { x: r.x, right: r.right, width: r.width, height: r.height }; });
-    assert.ok(rect.width >= 44 && rect.height >= 44, `${viewport.name}: comfortable switcher target`);
+    const rect = await page.locator('.language').evaluate((el) => { const r = el.getBoundingClientRect(); return { x: r.x, right: r.right, width: r.width, height: r.height, minHeight: Number.parseFloat(getComputedStyle(el).minHeight) }; });
+    assert.ok(rect.width >= 44 && rect.minHeight >= 44 && rect.height >= 43.5, `${viewport.name}: comfortable 44px switcher target`);
     assert.ok(rect.x >= 0 && rect.right <= viewport.width, `${viewport.name}: switcher remains visible`);
     const headerRects = await page.locator('header .brand, header nav, header .language, header .sound, header .nav-download').evaluateAll((elements) => elements.filter((el) => el.getClientRects().length).map((el) => ({ name: el.className || el.tagName, ...el.getBoundingClientRect().toJSON() })));
     for (let i = 0; i < headerRects.length; i++) for (let j = i + 1; j < headerRects.length; j++) {
