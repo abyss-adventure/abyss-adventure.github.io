@@ -9,7 +9,7 @@ export const release = {
   sha256: "916108e500cf96e436efad29bb31a96c1164faa4f490fc7cdf4aad5f6cb47933",
   filename: "Abyss-Adventure-1.2.1-57-project1-d0bcd5a-PhiTest.apk",
   tag: "android-preview-1.2.1-57-d0bcd5a",
-  repository: "https://github.com/HenryParker37-VIP/abyss-adventure",
+  repository: "https://github.com/abyss-adventure/abyss-adventure.github.io",
   source:
     "https://github.com/haohao2766-sudo/ABYSS-ADVENTURE/tree/d0bcd5a07f11482c97591deda95357090efb358e",
 };

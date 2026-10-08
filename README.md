@@ -2,7 +2,7 @@
 
 A bilingual, native-scroll storytelling site for Phi Nguyễn's dark-fantasy dungeon RPG.
 
-**Live:** https://henryparker37-vip.github.io/abyss-adventure/
+**Live:** https://abyss-adventure.github.io/
 
 ## Run
 
@@ -16,7 +16,7 @@ npm run check
 npm run preview
 ```
 
-Open the printed URL with `/abyss-adventure/` appended. The site has a single route with section anchors. `npm run build` performs TypeScript checking and a production build.
+Open the printed root URL directly. The site has a single route with section anchors. `npm run build` performs TypeScript checking and a production build.
 
 ## Architecture
 
@@ -34,9 +34,9 @@ React + TypeScript + Vite; GSAP ScrollTrigger controls the title push, source-to
 
 ## Publish / Pages
 
-Dedicated website repo. Push to **main** triggers `.github/workflows/pages.yml`, installs locked dependencies, builds, checks and deploys to GitHub Pages. Pages source must be GitHub Actions. The game repository and its branches are untouched.
+Organization website repository: [`abyss-adventure/abyss-adventure.github.io`](https://github.com/abyss-adventure/abyss-adventure.github.io). Push to **main** triggers `.github/workflows/pages.yml`, installs locked dependencies, builds, checks and deploys to GitHub Pages. Pages source is GitHub Actions. The separate game repository and its branches are untouched.
 
-Vite uses `/abyss-adventure/`. For a user-root or custom-domain deployment set `VITE_BASE_PATH=/` in the workflow/build environment. Also update canonical/OG/JSON-LD URLs in `index.html`, `public/sitemap.xml`, `public/robots.txt`, and these docs. All runtime media use `import.meta.env.BASE_URL`; there are no app routes to need a SPA 404 workaround.
+Vite builds for organization-root Pages using `/`. If the site later moves to a project Pages URL, set `VITE_BASE_PATH=/repository-name/` for that build. Also update canonical/OG/JSON-LD URLs in `index.html`, `public/sitemap.xml`, `public/robots.txt`, and these docs. All runtime media use `import.meta.env.BASE_URL`; there are no app routes to need a SPA 404 workaround.
 
 ## Update content
 
@@ -44,7 +44,7 @@ See [CONTENT-EDITING.md](CONTENT-EDITING.md). Do not rewrite the UI to change re
 
 ## QA
 
-`npm run check` checks translation structure, canonical names, assets, release metadata and generated base paths. `node scripts/qa.mjs` runs Chrome and WebKit responsive interaction checks against the production preview on port4174 (override `QA_URL`). `node scripts/screens.mjs` captures the current local surface; adjust its URL if needed. Browser binaries are local QA dependencies, not deployment dependencies.
+`npm run check` checks translation structure, canonical names, assets, release metadata and generated root asset paths. `node scripts/qa.mjs` runs Chrome and WebKit responsive interaction checks against the production preview on port4174 (override `QA_URL`). `node scripts/screens.mjs` captures the current local surface; adjust its URL if needed. Browser binaries are local QA dependencies, not deployment dependencies.
 
 Original game artwork is preserved, not regenerated. The source-to-world sequence is a promotional explanation, **not an invented historical prototype**. Android captures contain genuine test UI. The Android download is an explicitly marked preview/test build, not a stable release. No public iOS download is offered.
 

@@ -4,9 +4,13 @@
 
 Website is a dedicated repository. Game commit remains `d0bcd5a07f11482c97591deda95357090efb358e`. The exact APK was checksum-verified, not rebuilt. Game source, runtime, save, balance, art originals and platform host projects were not edited.
 
+## Organization-root migration
+
+Rebuilt with `/`, transferred release link and organization canonical metadata. The former project-pages Lighthouse artifact is explicitly retained only as historical evidence in `lighthouse-project-pages-baseline.json`.
+
 ## Evidence
 
-- 380 content/localization/canonical-name/asset/base-path assertions.
+- 385 content/localization/canonical-name/asset/base-path/organization-metadata assertions.
 - TypeScript and Vite production build.
 - Chrome and WebKit interactions: see `runtime-qa.json` for completed cases.
 - Axe WCAG2A/AA and2.1AA scan: zero violations in desktop EN and mobile VI (`accessibility.json`). Automated scanning is not a claim of complete accessibility conformance.

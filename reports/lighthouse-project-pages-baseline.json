@@ -1,9 +1,9 @@
 {
   "lighthouseVersion": "13.5.0",
-  "requestedUrl": "http://127.0.0.1:4174/abyss-adventure/",
-  "mainDocumentUrl": "http://127.0.0.1:4174/abyss-adventure/",
-  "finalDisplayedUrl": "http://127.0.0.1:4174/abyss-adventure/",
-  "finalUrl": "http://127.0.0.1:4174/abyss-adventure/",
+  "requestedUrl": "http://127.0.0.1:4174/",
+  "mainDocumentUrl": "http://127.0.0.1:4174/",
+  "finalDisplayedUrl": "http://127.0.0.1:4174/",
+  "finalUrl": "http://127.0.0.1:4174/",
   "fetchTime": "2026-10-07T16:47:23.577Z",
   "gatherMode": "navigation",
   "runWarnings": [
@@ -260,7 +260,7 @@
         ],
         "items": [
           {
-            "url": "http://127.0.0.1:4174/abyss-adventure/",
+            "url": "http://127.0.0.1:4174/",
             "responseTime": 5
           }
         ],
@@ -563,7 +563,7 @@
         ],
         "items": [
           {
-            "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-oalL7TpU.js",
+            "url": "http://127.0.0.1:4174/assets/index-oalL7TpU.js",
             "total": 722.1119999999997,
             "scripting": 214.86399999999952,
             "scriptParseCompile": 1.616
@@ -575,7 +575,7 @@
             "scriptParseCompile": 0
           },
           {
-            "url": "http://127.0.0.1:4174/abyss-adventure/",
+            "url": "http://127.0.0.1:4174/",
             "total": 129.932,
             "scripting": 9.851999999999997,
             "scriptParseCompile": 0.34400000000000003
@@ -684,7 +684,7 @@
         ],
         "items": [
           {
-            "url": "http://127.0.0.1:4174/abyss-adventure/",
+            "url": "http://127.0.0.1:4174/",
             "sessionTargetType": "page",
             "protocol": "http/1.1",
             "cache": "none",
@@ -702,7 +702,7 @@
             "entity": "127.0.0.1"
           },
           {
-            "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-oalL7TpU.js",
+            "url": "http://127.0.0.1:4174/assets/index-oalL7TpU.js",
             "sessionTargetType": "page",
             "protocol": "http/1.1",
             "cache": "none",
@@ -720,7 +720,7 @@
             "entity": "127.0.0.1"
           },
           {
-            "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-_b8A35X_.css",
+            "url": "http://127.0.0.1:4174/assets/index-_b8A35X_.css",
             "sessionTargetType": "page",
             "protocol": "http/1.1",
             "cache": "none",
@@ -738,7 +738,7 @@
             "entity": "127.0.0.1"
           },
           {
-            "url": "http://127.0.0.1:4174/abyss-adventure/assets/be-vietnam-pro-vietnamese-400-normal-CRcqvyg1.woff2",
+            "url": "http://127.0.0.1:4174/assets/be-vietnam-pro-vietnamese-400-normal-CRcqvyg1.woff2",
             "sessionTargetType": "page",
             "protocol": "http/1.1",
             "cache": "none",
@@ -756,7 +756,7 @@
             "entity": "127.0.0.1"
           },
           {
-            "url": "http://127.0.0.1:4174/abyss-adventure/assets/alegreya-vietnamese-400-normal-D8CgJdBg.woff2",
+            "url": "http://127.0.0.1:4174/assets/alegreya-vietnamese-400-normal-D8CgJdBg.woff2",
             "sessionTargetType": "page",
             "protocol": "http/1.1",
             "cache": "none",
@@ -774,7 +774,7 @@
             "entity": "127.0.0.1"
           },
           {
-            "url": "http://127.0.0.1:4174/abyss-adventure/media/logo.webp",
+            "url": "http://127.0.0.1:4174/media/logo.webp",
             "sessionTargetType": "page",
             "protocol": "http/1.1",
             "cache": "none",
@@ -792,7 +792,7 @@
             "entity": "127.0.0.1"
           },
           {
-            "url": "http://127.0.0.1:4174/abyss-adventure/media/raid-small.webp",
+            "url": "http://127.0.0.1:4174/media/raid-small.webp",
             "sessionTargetType": "page",
             "protocol": "http/1.1",
             "cache": "none",
@@ -810,7 +810,7 @@
             "entity": "127.0.0.1"
           },
           {
-            "url": "http://127.0.0.1:4174/abyss-adventure/media/favicon.png",
+            "url": "http://127.0.0.1:4174/media/favicon.png",
             "sessionTargetType": "page",
             "protocol": "http/1.1",
             "cache": "none",
@@ -828,7 +828,7 @@
             "entity": "127.0.0.1"
           },
           {
-            "url": "http://127.0.0.1:4174/abyss-adventure/assets/alegreya-latin-400-normal-BLlBRtDv.woff2",
+            "url": "http://127.0.0.1:4174/assets/alegreya-latin-400-normal-BLlBRtDv.woff2",
             "sessionTargetType": "page",
             "protocol": "http/1.1",
             "cache": "none",
@@ -846,7 +846,7 @@
             "entity": "127.0.0.1"
           },
           {
-            "url": "http://127.0.0.1:4174/abyss-adventure/assets/be-vietnam-pro-latin-400-normal-PpnXBOrz.woff2",
+            "url": "http://127.0.0.1:4174/assets/be-vietnam-pro-latin-400-normal-PpnXBOrz.woff2",
             "sessionTargetType": "page",
             "protocol": "http/1.1",
             "cache": "none",
@@ -864,7 +864,7 @@
             "entity": "127.0.0.1"
           },
           {
-            "url": "http://127.0.0.1:4174/abyss-adventure/media/forest-small.webp",
+            "url": "http://127.0.0.1:4174/media/forest-small.webp",
             "sessionTargetType": "page",
             "protocol": "http/1.1",
             "cache": "none",
@@ -888,31 +888,31 @@
           "initiators": [
             {
               "type": "parser",
-              "url": "http://127.0.0.1:4174/abyss-adventure/",
+              "url": "http://127.0.0.1:4174/",
               "lineNumber": 8,
               "columnNumber": 84
             },
             {
               "type": "parser",
-              "url": "http://127.0.0.1:4174/abyss-adventure/",
+              "url": "http://127.0.0.1:4174/",
               "lineNumber": 9,
               "columnNumber": 87
             },
             {
               "type": "parser",
-              "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-_b8A35X_.css"
+              "url": "http://127.0.0.1:4174/assets/index-_b8A35X_.css"
             },
             {
               "type": "parser",
-              "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-_b8A35X_.css"
+              "url": "http://127.0.0.1:4174/assets/index-_b8A35X_.css"
             },
             {
               "type": "parser",
-              "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-_b8A35X_.css"
+              "url": "http://127.0.0.1:4174/assets/index-_b8A35X_.css"
             },
             {
               "type": "parser",
-              "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-_b8A35X_.css"
+              "url": "http://127.0.0.1:4174/assets/index-_b8A35X_.css"
             }
           ]
         }
@@ -1249,7 +1249,7 @@
         ],
         "items": [
           {
-            "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-oalL7TpU.js",
+            "url": "http://127.0.0.1:4174/assets/index-oalL7TpU.js",
             "duration": 240,
             "startTime": 2446.4557
           },
@@ -1268,7 +1268,7 @@
         "debugData": {
           "type": "debugdata",
           "urls": [
-            "http://127.0.0.1:4174/abyss-adventure/assets/index-oalL7TpU.js",
+            "http://127.0.0.1:4174/assets/index-oalL7TpU.js",
             "Unattributable"
           ],
           "tasks": [
@@ -1573,7 +1573,7 @@
         "type": "treemap-data",
         "nodes": [
           {
-            "name": "http://127.0.0.1:4174/abyss-adventure/assets/index-oalL7TpU.js",
+            "name": "http://127.0.0.1:4174/assets/index-oalL7TpU.js",
             "resourceBytes": 363461,
             "encodedBytes": 123922,
             "unusedBytes": 177720
@@ -2561,43 +2561,43 @@
         ],
         "items": [
           {
-            "url": "http://127.0.0.1:4174/abyss-adventure/media/logo.webp",
+            "url": "http://127.0.0.1:4174/media/logo.webp",
             "totalBytes": 166402
           },
           {
-            "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-oalL7TpU.js",
+            "url": "http://127.0.0.1:4174/assets/index-oalL7TpU.js",
             "totalBytes": 124277
           },
           {
-            "url": "http://127.0.0.1:4174/abyss-adventure/media/raid-small.webp",
+            "url": "http://127.0.0.1:4174/media/raid-small.webp",
             "totalBytes": 90270
           },
           {
-            "url": "http://127.0.0.1:4174/abyss-adventure/media/forest-small.webp",
+            "url": "http://127.0.0.1:4174/media/forest-small.webp",
             "totalBytes": 66882
           },
           {
-            "url": "http://127.0.0.1:4174/abyss-adventure/assets/alegreya-latin-400-normal-BLlBRtDv.woff2",
+            "url": "http://127.0.0.1:4174/assets/alegreya-latin-400-normal-BLlBRtDv.woff2",
             "totalBytes": 23204
           },
           {
-            "url": "http://127.0.0.1:4174/abyss-adventure/assets/be-vietnam-pro-latin-400-normal-PpnXBOrz.woff2",
+            "url": "http://127.0.0.1:4174/assets/be-vietnam-pro-latin-400-normal-PpnXBOrz.woff2",
             "totalBytes": 21488
           },
           {
-            "url": "http://127.0.0.1:4174/abyss-adventure/assets/be-vietnam-pro-vietnamese-400-normal-CRcqvyg1.woff2",
+            "url": "http://127.0.0.1:4174/assets/be-vietnam-pro-vietnamese-400-normal-CRcqvyg1.woff2",
             "totalBytes": 11852
           },
           {
-            "url": "http://127.0.0.1:4174/abyss-adventure/assets/alegreya-vietnamese-400-normal-D8CgJdBg.woff2",
+            "url": "http://127.0.0.1:4174/assets/alegreya-vietnamese-400-normal-D8CgJdBg.woff2",
             "totalBytes": 6882
           },
           {
-            "url": "http://127.0.0.1:4174/abyss-adventure/media/favicon.png",
+            "url": "http://127.0.0.1:4174/media/favicon.png",
             "totalBytes": 5693
           },
           {
-            "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-_b8A35X_.css",
+            "url": "http://127.0.0.1:4174/assets/index-_b8A35X_.css",
             "totalBytes": 5656
           }
         ],
@@ -2748,7 +2748,7 @@
         ],
         "items": [
           {
-            "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-oalL7TpU.js",
+            "url": "http://127.0.0.1:4174/assets/index-oalL7TpU.js",
             "totalBytes": 123495,
             "wastedBytes": 60385,
             "wastedPercent": 48.89658037588627
@@ -2905,7 +2905,7 @@
             },
             "source": {
               "type": "source-location",
-              "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-oalL7TpU.js",
+              "url": "http://127.0.0.1:4174/assets/index-oalL7TpU.js",
               "urlProvider": "network",
               "line": 7,
               "column": 141281
@@ -2924,7 +2924,7 @@
             },
             "source": {
               "type": "source-location",
-              "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-oalL7TpU.js",
+              "url": "http://127.0.0.1:4174/assets/index-oalL7TpU.js",
               "urlProvider": "network",
               "line": 7,
               "column": 5877
@@ -2943,7 +2943,7 @@
             },
             "source": {
               "type": "source-location",
-              "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-oalL7TpU.js",
+              "url": "http://127.0.0.1:4174/assets/index-oalL7TpU.js",
               "urlProvider": "network",
               "line": 18,
               "column": 3447
@@ -2962,7 +2962,7 @@
             },
             "source": {
               "type": "source-location",
-              "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-oalL7TpU.js",
+              "url": "http://127.0.0.1:4174/assets/index-oalL7TpU.js",
               "urlProvider": "network",
               "line": 18,
               "column": 3447
@@ -2981,7 +2981,7 @@
             },
             "source": {
               "type": "source-location",
-              "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-oalL7TpU.js",
+              "url": "http://127.0.0.1:4174/assets/index-oalL7TpU.js",
               "urlProvider": "network",
               "line": 18,
               "column": 3447
@@ -3000,7 +3000,7 @@
             },
             "source": {
               "type": "source-location",
-              "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-oalL7TpU.js",
+              "url": "http://127.0.0.1:4174/assets/index-oalL7TpU.js",
               "urlProvider": "network",
               "line": 8,
               "column": 112739
@@ -3019,7 +3019,7 @@
             },
             "source": {
               "type": "source-location",
-              "url": "http://127.0.0.1:4174/abyss-adventure/",
+              "url": "http://127.0.0.1:4174/",
               "urlProvider": "network",
               "line": -2,
               "column": -2
@@ -3038,7 +3038,7 @@
             },
             "source": {
               "type": "source-location",
-              "url": "http://127.0.0.1:4174/abyss-adventure/",
+              "url": "http://127.0.0.1:4174/",
               "urlProvider": "network",
               "line": -2,
               "column": -2
@@ -3057,7 +3057,7 @@
             },
             "source": {
               "type": "source-location",
-              "url": "http://127.0.0.1:4174/abyss-adventure/",
+              "url": "http://127.0.0.1:4174/",
               "urlProvider": "network",
               "line": -2,
               "column": -2
@@ -3076,7 +3076,7 @@
             },
             "source": {
               "type": "source-location",
-              "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-oalL7TpU.js",
+              "url": "http://127.0.0.1:4174/assets/index-oalL7TpU.js",
               "urlProvider": "network",
               "line": 8,
               "column": 94477
@@ -3095,7 +3095,7 @@
             },
             "source": {
               "type": "source-location",
-              "url": "http://127.0.0.1:4174/abyss-adventure/",
+              "url": "http://127.0.0.1:4174/",
               "urlProvider": "network",
               "line": 0,
               "column": 0
@@ -3114,7 +3114,7 @@
             },
             "source": {
               "type": "source-location",
-              "url": "http://127.0.0.1:4174/abyss-adventure/",
+              "url": "http://127.0.0.1:4174/",
               "urlProvider": "network",
               "line": -2,
               "column": -2
@@ -3133,7 +3133,7 @@
             },
             "source": {
               "type": "source-location",
-              "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-oalL7TpU.js",
+              "url": "http://127.0.0.1:4174/assets/index-oalL7TpU.js",
               "urlProvider": "network",
               "line": 7,
               "column": 90309
@@ -3152,7 +3152,7 @@
             },
             "source": {
               "type": "source-location",
-              "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-oalL7TpU.js",
+              "url": "http://127.0.0.1:4174/assets/index-oalL7TpU.js",
               "urlProvider": "network",
               "line": 7,
               "column": 36680
@@ -3171,7 +3171,7 @@
             },
             "source": {
               "type": "source-location",
-              "url": "http://127.0.0.1:4174/abyss-adventure/",
+              "url": "http://127.0.0.1:4174/",
               "urlProvider": "network",
               "line": -2,
               "column": -2
@@ -3190,7 +3190,7 @@
             },
             "source": {
               "type": "source-location",
-              "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-oalL7TpU.js",
+              "url": "http://127.0.0.1:4174/assets/index-oalL7TpU.js",
               "urlProvider": "network",
               "line": 18,
               "column": 3447
@@ -3209,7 +3209,7 @@
             },
             "source": {
               "type": "source-location",
-              "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-oalL7TpU.js",
+              "url": "http://127.0.0.1:4174/assets/index-oalL7TpU.js",
               "urlProvider": "network",
               "line": 18,
               "column": 3447
@@ -3228,7 +3228,7 @@
             },
             "source": {
               "type": "source-location",
-              "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-oalL7TpU.js",
+              "url": "http://127.0.0.1:4174/assets/index-oalL7TpU.js",
               "urlProvider": "network",
               "line": 8,
               "column": 66682
@@ -3654,7 +3654,7 @@
               {
                 "source": {
                   "type": "source-location",
-                  "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-oalL7TpU.js",
+                  "url": "http://127.0.0.1:4174/assets/index-oalL7TpU.js",
                   "urlProvider": "network",
                   "line": 1,
                   "column": 10960
@@ -3689,7 +3689,7 @@
               {
                 "source": {
                   "type": "source-location",
-                  "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-oalL7TpU.js",
+                  "url": "http://127.0.0.1:4174/assets/index-oalL7TpU.js",
                   "urlProvider": "network",
                   "line": 8,
                   "column": 156918
@@ -3699,7 +3699,7 @@
               {
                 "source": {
                   "type": "source-location",
-                  "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-oalL7TpU.js",
+                  "url": "http://127.0.0.1:4174/assets/index-oalL7TpU.js",
                   "urlProvider": "network",
                   "line": 8,
                   "column": 137521
@@ -3709,7 +3709,7 @@
               {
                 "source": {
                   "type": "source-location",
-                  "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-oalL7TpU.js",
+                  "url": "http://127.0.0.1:4174/assets/index-oalL7TpU.js",
                   "urlProvider": "network",
                   "line": 8,
                   "column": 136452
@@ -3719,7 +3719,7 @@
               {
                 "source": {
                   "type": "source-location",
-                  "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-oalL7TpU.js",
+                  "url": "http://127.0.0.1:4174/assets/index-oalL7TpU.js",
                   "urlProvider": "network",
                   "line": 8,
                   "column": 133578
@@ -3729,7 +3729,7 @@
               {
                 "source": {
                   "type": "source-location",
-                  "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-oalL7TpU.js",
+                  "url": "http://127.0.0.1:4174/assets/index-oalL7TpU.js",
                   "urlProvider": "network",
                   "line": 18,
                   "column": 3447
@@ -3739,7 +3739,7 @@
               {
                 "source": {
                   "type": "source-location",
-                  "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-oalL7TpU.js",
+                  "url": "http://127.0.0.1:4174/assets/index-oalL7TpU.js",
                   "urlProvider": "network",
                   "line": 8,
                   "column": 105772
@@ -3749,7 +3749,7 @@
               {
                 "source": {
                   "type": "source-location",
-                  "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-oalL7TpU.js",
+                  "url": "http://127.0.0.1:4174/assets/index-oalL7TpU.js",
                   "urlProvider": "network",
                   "line": 8,
                   "column": 123516
@@ -3823,7 +3823,7 @@
               "snippet": "<img class=\"\" width=\"1600\" height=\"533\" alt=\"\" loading=\"eager\" decoding=\"async\" fetchpriority=\"high\" src=\"/abyss-adventure/media/logo.webp\">",
               "nodeLabel": "div > header.header > a.brand > img"
             },
-            "url": "http://127.0.0.1:4174/abyss-adventure/media/logo.webp",
+            "url": "http://127.0.0.1:4174/media/logo.webp",
             "totalBytes": 166132,
             "wastedBytes": 164598,
             "subItems": {
@@ -3854,10 +3854,10 @@
                 "width": 420,
                 "height": 839
               },
-              "snippet": "<img class=\"hero-environment\" width=\"1536\" height=\"1024\" sizes=\"100vw\" alt=\"\" loading=\"eager\" decoding=\"async\" fetchpriority=\"high\" srcset=\"/abyss-adventure/media/raid-small.webp 800w, /abyss-adventure/media/raid.w…\" src=\"http://127.0.0.1:4174/abyss-adventure/media/raid-small.webp\">",
+              "snippet": "<img class=\"hero-environment\" width=\"1536\" height=\"1024\" sizes=\"100vw\" alt=\"\" loading=\"eager\" decoding=\"async\" fetchpriority=\"high\" srcset=\"/abyss-adventure/media/raid-small.webp 800w, /abyss-adventure/media/raid.w…\" src=\"http://127.0.0.1:4174/media/raid-small.webp\">",
               "nodeLabel": "main > section#surface > div.surface-sticky > img.hero-environment"
             },
-            "url": "http://127.0.0.1:4174/abyss-adventure/media/raid-small.webp",
+            "url": "http://127.0.0.1:4174/media/raid-small.webp",
             "totalBytes": 90002,
             "wastedBytes": 66294,
             "subItems": {
@@ -3884,10 +3884,10 @@
                 "width": 412,
                 "height": 540
               },
-              "snippet": "<img class=\"world-art\" width=\"1024\" height=\"427\" sizes=\"100vw\" alt=\"Ashwood Forest\" loading=\"lazy\" decoding=\"async\" fetchpriority=\"auto\" srcset=\"/abyss-adventure/media/forest-small.webp 800w, /abyss-adventure/media/fore…\" src=\"http://127.0.0.1:4174/abyss-adventure/media/forest-small.webp\">",
+              "snippet": "<img class=\"world-art\" width=\"1024\" height=\"427\" sizes=\"100vw\" alt=\"Ashwood Forest\" loading=\"lazy\" decoding=\"async\" fetchpriority=\"auto\" srcset=\"/abyss-adventure/media/forest-small.webp 800w, /abyss-adventure/media/fore…\" src=\"http://127.0.0.1:4174/media/forest-small.webp\">",
               "nodeLabel": "Ashwood Forest"
             },
-            "url": "http://127.0.0.1:4174/abyss-adventure/media/forest-small.webp",
+            "url": "http://127.0.0.1:4174/media/forest-small.webp",
             "totalBytes": 66614,
             "wastedBytes": 52435,
             "subItems": {
@@ -4073,38 +4073,38 @@
               "type": "network-tree",
               "chains": {
                 "4488935018260CDFB416119FFCB81B49": {
-                  "url": "http://127.0.0.1:4174/abyss-adventure/",
+                  "url": "http://127.0.0.1:4174/",
                   "navStartToEndTime": 71,
                   "transferSize": 1376,
                   "isLongest": true,
                   "children": {
                     "10724.3": {
-                      "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-_b8A35X_.css",
+                      "url": "http://127.0.0.1:4174/assets/index-_b8A35X_.css",
                       "navStartToEndTime": 77,
                       "transferSize": 5656,
                       "isLongest": true,
                       "children": {
                         "10724.14": {
-                          "url": "http://127.0.0.1:4174/abyss-adventure/assets/be-vietnam-pro-latin-400-normal-PpnXBOrz.woff2",
+                          "url": "http://127.0.0.1:4174/assets/be-vietnam-pro-latin-400-normal-PpnXBOrz.woff2",
                           "navStartToEndTime": 259,
                           "transferSize": 21488,
                           "isLongest": true,
                           "children": {}
                         },
                         "10724.6": {
-                          "url": "http://127.0.0.1:4174/abyss-adventure/assets/alegreya-latin-400-normal-BLlBRtDv.woff2",
+                          "url": "http://127.0.0.1:4174/assets/alegreya-latin-400-normal-BLlBRtDv.woff2",
                           "navStartToEndTime": 259,
                           "transferSize": 23204,
                           "children": {}
                         },
                         "10724.10": {
-                          "url": "http://127.0.0.1:4174/abyss-adventure/assets/alegreya-vietnamese-400-normal-D8CgJdBg.woff2",
+                          "url": "http://127.0.0.1:4174/assets/alegreya-vietnamese-400-normal-D8CgJdBg.woff2",
                           "navStartToEndTime": 248,
                           "transferSize": 6882,
                           "children": {}
                         },
                         "10724.18": {
-                          "url": "http://127.0.0.1:4174/abyss-adventure/assets/be-vietnam-pro-vietnamese-400-normal-CRcqvyg1.woff2",
+                          "url": "http://127.0.0.1:4174/assets/be-vietnam-pro-vietnamese-400-normal-CRcqvyg1.woff2",
                           "navStartToEndTime": 246,
                           "transferSize": 11852,
                           "children": {}
@@ -4112,7 +4112,7 @@
                       }
                     },
                     "10724.2": {
-                      "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-oalL7TpU.js",
+                      "url": "http://127.0.0.1:4174/assets/index-oalL7TpU.js",
                       "navStartToEndTime": 91,
                       "transferSize": 124277,
                       "children": {}
@@ -4179,7 +4179,7 @@
         ],
         "items": [
           {
-            "url": "http://127.0.0.1:4174/abyss-adventure/assets/index-_b8A35X_.css",
+            "url": "http://127.0.0.1:4174/assets/index-_b8A35X_.css",
             "totalBytes": 5656,
             "wastedMs": 155
           }

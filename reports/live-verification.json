@@ -1,8 +1,8 @@
 {
-  "url": "https://henryparker37-vip.github.io/abyss-adventure/",
+  "url": "https://abyss-adventure.github.io/",
   "httpStatus": 200,
-  "script": "/abyss-adventure/assets/index-D1hudu8k.js",
-  "css": "/abyss-adventure/assets/index-BS6Y41tX.css",
+  "script": "/assets/index-D1hudu8k.js",
+  "css": "/assets/index-BS6Y41tX.css",
   "bundleMatchesLocal": true,
   "sha256": "640a740d4f078ef5186f9d55ce8b971b678b1ca34fb6f4f465c7e6854318d5bd"
 }

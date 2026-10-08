@@ -1,7 +1,7 @@
 import {chromium} from 'playwright';import assert from 'node:assert/strict';import fs from 'node:fs/promises';
 const b=await chromium.launch({channel:'chrome'});const context=await b.newContext();const p=await context.newPage();
 await p.addInitScript(()=>{window.__audioInstances=[];const Original=window.Audio;window.Audio=class extends Original{constructor(...args){super(...args);window.__audioInstances.push(this)}}});
-await p.goto('http://127.0.0.1:4174/abyss-adventure/');assert.equal(await p.evaluate(()=>window.__audioInstances.filter(a=>!a.paused).length),0);
+await p.goto('http://127.0.0.1:4174/');assert.equal(await p.evaluate(()=>window.__audioInstances.filter(a=>!a.paused).length),0);
 await p.locator('.sound').click();await p.waitForFunction(()=>window.__audioInstances.some(a=>a.duration>140&&a.currentTime>0));
 const duration=await p.evaluate(()=>window.__audioInstances.at(-1).duration);assert.ok(duration>=143&&duration<=145);
 await p.getByRole('button',{name:'Switch to Tiếng Việt'}).click();await p.locator('#systems').scrollIntoViewIfNeeded();

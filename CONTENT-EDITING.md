@@ -27,7 +27,7 @@ No AI-generated images are used. Social preview is an original-art composition; 
 ## Android release
 
 1. Obtain an approved APK and verify its SHA-256 locally.
-2. Publish it through GitHub Releases on this website repository. Mark prerelease while it is a preview/test candidate.
+2. Publish it through GitHub Releases on `abyss-adventure/abyss-adventure.github.io`. Mark prerelease while it is a preview/test candidate.
 3. Update `release` in `src/content.ts`: version, build, byte size, date, exact game commit, checksum, filename and tag. Source commit points to the game; site commit is independent.
 4. Update the fallback release link in `index.html` if the tag changes. Release status copy is in both language objects.
 5. Update the pinned candidate assertions in `scripts/check.mjs` only as part of an intentional release update.

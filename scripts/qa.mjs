@@ -1,7 +1,7 @@
 import {chromium,webkit} from 'playwright';
 import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
-const url=process.env.QA_URL||'http://127.0.0.1:4174/abyss-adventure/';
+const url=process.env.QA_URL||'http://127.0.0.1:4174/';
 const results=[];
 for(const kind of ['chrome','webkit']){
  const browser=kind==='chrome'?await chromium.launch({channel:'chrome',headless:true}):await webkit.launch({headless:true});
