@@ -1,0 +1,194 @@
+[
+  {
+    "name": "ruins",
+    "source": "art/backgrounds/abyss-ruins-B.png",
+    "kind": "original game artwork, optimized copy",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 92628
+  },
+  {
+    "name": "loading",
+    "source": "art/backgrounds/loading-B.png",
+    "kind": "original game artwork, optimized copy",
+    "width": 900,
+    "height": 1600,
+    "bytes": 171738
+  },
+  {
+    "name": "forest",
+    "source": "art/backgrounds/map01.webp",
+    "kind": "original game artwork, optimized copy",
+    "width": 1024,
+    "height": 427,
+    "bytes": 144616
+  },
+  {
+    "name": "mine",
+    "source": "art/backgrounds/map05.webp",
+    "kind": "original game artwork, optimized copy",
+    "width": 900,
+    "height": 1600,
+    "bytes": 190894
+  },
+  {
+    "name": "abyss",
+    "source": "art/backgrounds/map10.webp",
+    "kind": "original game artwork, optimized copy",
+    "width": 900,
+    "height": 1600,
+    "bytes": 218348
+  },
+  {
+    "name": "forge",
+    "source": "art/backgrounds/forge.webp",
+    "kind": "original game artwork, optimized copy",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 229222
+  },
+  {
+    "name": "logo",
+    "source": "art/title-logo.png",
+    "kind": "original game artwork, optimized copy",
+    "width": 1600,
+    "height": 533,
+    "bytes": 166132
+  },
+  {
+    "name": "icon",
+    "source": "art/launcher-icon.png",
+    "kind": "original game artwork, optimized copy",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 59148
+  },
+  {
+    "name": "warrior",
+    "source": "art/classes/warrior.png",
+    "kind": "original game artwork, optimized copy",
+    "width": 256,
+    "height": 256,
+    "bytes": 17684
+  },
+  {
+    "name": "mage",
+    "source": "art/classes/mage.png",
+    "kind": "original game artwork, optimized copy",
+    "width": 256,
+    "height": 256,
+    "bytes": 19236
+  },
+  {
+    "name": "rogue",
+    "source": "art/classes/rogue.png",
+    "kind": "original game artwork, optimized copy",
+    "width": 256,
+    "height": 256,
+    "bytes": 16366
+  },
+  {
+    "name": "guardian",
+    "source": "art/classes/guardian.png",
+    "kind": "original game artwork, optimized copy",
+    "width": 256,
+    "height": 256,
+    "bytes": 22164
+  },
+  {
+    "name": "necromancer",
+    "source": "art/classes/necromancer.png",
+    "kind": "original game artwork, optimized copy",
+    "width": 256,
+    "height": 256,
+    "bytes": 20128
+  },
+  {
+    "name": "assassin",
+    "source": "art/classes/assassin.png",
+    "kind": "original game artwork, optimized copy",
+    "width": 256,
+    "height": 256,
+    "bytes": 15510
+  },
+  {
+    "name": "regent",
+    "source": "art/raid/drowned-regent.png",
+    "kind": "original game artwork, optimized copy",
+    "width": 1242,
+    "height": 1266,
+    "bytes": 541578
+  },
+  {
+    "name": "chainlord",
+    "source": "art/raid/chainbound-tomb-lord.png",
+    "kind": "original game artwork, optimized copy",
+    "width": 420,
+    "height": 381,
+    "bytes": 73084
+  },
+  {
+    "name": "raid",
+    "source": "art/raid/map-1.png",
+    "kind": "original game artwork, optimized copy",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 288178
+  },
+  {
+    "name": "sword",
+    "source": "art/items/eq_ashfall_bronze_sword.png",
+    "kind": "original game artwork, optimized copy",
+    "width": 64,
+    "height": 64,
+    "bytes": 1856
+  },
+  {
+    "name": "staff",
+    "source": "art/items/eq_ashspirit_bronze_staff.png",
+    "kind": "original game artwork, optimized copy",
+    "width": 64,
+    "height": 64,
+    "bytes": 1448
+  },
+  {
+    "name": "bow",
+    "source": "art/items/eq_ashveil_bronze_bow.png",
+    "kind": "original game artwork, optimized copy",
+    "width": 64,
+    "height": 64,
+    "bytes": 2124
+  },
+  {
+    "name": "explore",
+    "source": "art/explore/ice-background.png",
+    "kind": "original game artwork, optimized copy",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 281520
+  },
+  {
+    "name": "game-world",
+    "source": "reports/qa-evidence/android-api35-pushed-commit-final.png",
+    "kind": "actual Android test-build capture",
+    "bytes": 94740,
+    "width": 540,
+    "height": 1200
+  },
+  {
+    "name": "game-inventory",
+    "source": "reports/qa-evidence/android-api35-inventory-test.png",
+    "kind": "actual Android test-build capture",
+    "bytes": 82132,
+    "width": 900,
+    "height": 1832
+  },
+  {
+    "name": "game-raid",
+    "source": "reports/qa-evidence/android-api35-raid-combat-test.png",
+    "kind": "actual Android test-build capture",
+    "bytes": 172984,
+    "width": 900,
+    "height": 1832
+  }
+]

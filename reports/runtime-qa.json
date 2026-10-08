@@ -1,0 +1,58 @@
+[
+  {
+    "browser": "chrome",
+    "viewport": "desktop",
+    "passed": true,
+    "runtimeErrors": [],
+    "failedResources": []
+  },
+  {
+    "browser": "chrome",
+    "viewport": "iphone",
+    "passed": true,
+    "runtimeErrors": [],
+    "failedResources": []
+  },
+  {
+    "browser": "chrome",
+    "viewport": "android",
+    "passed": true,
+    "runtimeErrors": [],
+    "failedResources": []
+  },
+  {
+    "browser": "chrome",
+    "viewport": "small",
+    "passed": true,
+    "runtimeErrors": [],
+    "failedResources": []
+  },
+  {
+    "browser": "webkit",
+    "viewport": "desktop",
+    "passed": true,
+    "runtimeErrors": [],
+    "failedResources": []
+  },
+  {
+    "browser": "webkit",
+    "viewport": "iphone",
+    "passed": true,
+    "runtimeErrors": [],
+    "failedResources": []
+  },
+  {
+    "browser": "webkit",
+    "viewport": "android",
+    "passed": true,
+    "runtimeErrors": [],
+    "failedResources": []
+  },
+  {
+    "browser": "webkit",
+    "viewport": "small",
+    "passed": true,
+    "runtimeErrors": [],
+    "failedResources": []
+  }
+]

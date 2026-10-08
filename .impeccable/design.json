@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-08T00:02:05.570Z",
+  "title": "Design System: Abyss Adventure",
+  "extensions": {
+    "breakpoints": {
+      "mobile": 760,
+      "intermediate": 1050,
+      "wide": 1600
+    },
+    "motion": [
+      {
+        "name": "control",
+        "value": "200–300ms",
+        "purpose": "Hover state; disabled for reduced motion"
+      },
+      {
+        "name": "descent",
+        "value": "scroll-linked",
+        "purpose": "Title push, source reveal, portrait depth"
+      }
+    ],
+    "shadows": [
+      {
+        "name": "portrait",
+        "value": "0 25px 30px #0008",
+        "purpose": "Separate portrait from ground"
+      }
+    ]
+  },
+  "components": [
+    {
+      "id": "download",
+      "label": "Download action",
+      "html": "<a class=\"ds-action\" href=\"#\">Download for Android</a>",
+      "css": ".ds-action{display:inline-block;background:#c4ad79;color:#12160e;padding:22px 24px;font:15px sans-serif;text-decoration:none}"
+    },
+    {
+      "id": "selector",
+      "label": "Scene selector",
+      "html": "<button class=\"ds-selector\" aria-pressed=\"true\">Ashwood Forest</button>",
+      "css": ".ds-selector{background:transparent;border:0;border-bottom:1px solid #c4ad79;color:#c4ad79;font:14px sans-serif;padding:16px 24px}"
+    },
+    {
+      "id": "link",
+      "label": "Chapter link",
+      "html": "<a class=\"ds-link\" href=\"#\">The world</a>",
+      "css": ".ds-link{color:#e7e3d9;font:13px sans-serif;text-decoration:none;padding:15px 0}"
+    },
+    {
+      "id": "metadata",
+      "label": "Release details",
+      "html": "<details class=\"ds-details\"><summary>Build details &amp; checksum</summary><p>Version1.2.1 · Preview</p></details>",
+      "css": ".ds-details{font:11px/1.8 sans-serif;color:#a6b1ad}.ds-details summary{padding:12px 0}"
+    },
+    {
+      "id": "portrait",
+      "label": "Portrait caption",
+      "html": "<h3 class=\"ds-title\">Guardian</h3>",
+      "css": ".ds-title{font:400 48px/1.1 Alegreya,serif;color:#e7e3d9;margin:0}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Descent into the Abyss",
+    "overview": "Cold, ancient environments carry the surface. Real painted maps and pixel portraits provide its identity; typography and controls leave room for them.",
+    "keyCharacteristics": [
+      "Real artwork at cinematic scale.",
+      "Open layouts with varied density.",
+      "Pale display typography and restrained brass actions.",
+      "Native scrolling and shorter touch compositions."
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.playwright-cli/
+reports/art-contact.png
+reports/dependency-audit-initial.json
+.DS_Store
+
+*.tsbuildinfo

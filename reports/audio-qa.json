@@ -1,0 +1,9 @@
+{
+  "duration": 144,
+  "noAutoplay": true,
+  "singleInstanceAfterLanguageAndNavigation": true,
+  "loopBoundarySeekTest": true,
+  "visibilityHandlerPauseResume": true,
+  "mute": true,
+  "limitation": "Visibility event simulated; no claim of physical mobile speaker audibility or a full-duration listening test."
+}
