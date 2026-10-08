@@ -22,6 +22,22 @@ try {
   await page.evaluate(() => document.fonts.ready);
   await page.getByRole('button', { name: 'Switch to Tiếng Việt' }).waitFor();
 
+  const footerText = async () => (await page.locator('footer').innerText()).replace(/\s+/g, ' ');
+  assert.ok((await footerText()).includes('Abyss Adventure · Phi Nguyễn × Henry Parker'));
+  assert.ok((await footerText()).includes('Website by Henry Parker (Nguyen Manh Tuan Hưng)'));
+  for (const [label, href] of [
+    ['Phi Nguyễn on GitHub', 'https://github.com/haohao2766-sudo'],
+    ['Henry Parker on GitHub', 'https://github.com/HenryParker37-VIP'],
+    ['Henry Parker (Nguyen Manh Tuan Hưng) on GitHub', 'https://github.com/HenryParker37-VIP'],
+  ]) {
+    const link = page.locator(`footer a[aria-label="${label}"]`);
+    assert.equal(await link.getAttribute('href'), href);
+    assert.equal(await link.getAttribute('target'), '_blank');
+    assert.match(await link.getAttribute('rel'), /noopener/);
+    assert.match(await link.getAttribute('rel'), /noreferrer/);
+    assert.equal(await link.getAttribute('title'), 'Open GitHub profile');
+  }
+
   await page.getByRole('button', { name: 'Lament Mine' }).click();
   assert.equal(await page.locator('.world-caption h3').innerText(), 'Lament Mine');
   await page.getByRole('button', { name: 'Raid', exact: true }).click();
@@ -35,6 +51,10 @@ try {
   });
   await page.getByRole('button', { name: 'Switch to Tiếng Việt' }).click();
   assert.equal(await page.evaluate(() => document.documentElement.lang), 'vi');
+  assert.ok((await footerText()).includes('Abyss Adventure · Phi Nguyễn × Henry Parker'));
+  assert.ok((await footerText()).includes('Website được thực hiện bởi Henry Parker (Nguyen Manh Tuan Hưng)'));
+  assert.equal(await page.locator('footer a[aria-label="Phi Nguyễn trên GitHub"]').getAttribute('title'), 'Mở hồ sơ GitHub');
+  assert.equal(await page.locator('footer a[aria-label="Henry Parker trên GitHub"]').getAttribute('href'), 'https://github.com/HenryParker37-VIP');
   assert.equal(await page.evaluate(() => localStorage.getItem('abyss-site-language')), 'vi');
   const afterViScroll = await page.evaluate(() => scrollY);
   assert.ok(Math.abs(afterViScroll - beforeSwitch.scrollY) <= 1, 'EN to VI preserves scroll position');

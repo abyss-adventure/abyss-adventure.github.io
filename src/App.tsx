@@ -697,8 +697,8 @@ export default function App() {
               href="https://github.com/haohao2766-sudo"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Phi Nguyễn on GitHub"
-              title="Open GitHub profile"
+              aria-label={t.phiProfileLabel}
+              title={t.openGithubProfile}
             >
               Phi Nguyễn
             </a>
@@ -707,8 +707,8 @@ export default function App() {
               href="https://github.com/HenryParker37-VIP"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Henry Parker on GitHub"
-              title="Open GitHub profile"
+              aria-label={t.henryProfileLabel}
+              title={t.openGithubProfile}
             >
               Henry Parker
             </a>
@@ -719,8 +719,8 @@ export default function App() {
               href="https://github.com/HenryParker37-VIP"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Henry Parker (Nguyen Manh Tuan Hưng) on GitHub"
-              title="Open GitHub profile"
+              aria-label={t.websiteProfileLabel}
+              title={t.openGithubProfile}
             >
               {t.websiteCreditName}
             </a>
