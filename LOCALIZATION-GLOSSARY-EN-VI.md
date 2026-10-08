@@ -18,7 +18,7 @@ The website translates communication into natural Vietnamese while preserving Ab
 | Excerpt | Trích đoạn | Generic content label |
 | Project credit | Dự án của | Public credit names both project collaborators: Phi Nguyễn and Henry Parker |
 | Original game concept & creative direction by Phi Nguyễn | Ý tưởng game gốc & định hướng sáng tạo: Phi Nguyễn | Credit for Phi's verified original concept and creative-direction role |
-| Website by Henry Parker (Nguyen Manh Tuan Hung) | Website được thực hiện bởi Henry Parker (Nguyen Manh Tuan Hung) | Keep Henry's full requested public name in the website credit |
+| Website by Henry Parker (Nguyen Manh Tuan Hưng) | Website được thực hiện bởi Henry Parker (Nguyen Manh Tuan Hưng) | Keep Henry's full requested public name in the website credit |
 
 ## Intentionally retained in English
 

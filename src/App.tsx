@@ -691,8 +691,40 @@ export default function App() {
       </main>
       <footer>
         <div>
-          <strong>{t.projectCredit}</strong>
-          <span>{t.websiteCredit}</span>
+          <strong>
+            {t.projectCreditLead}
+            <a
+              href="https://github.com/haohao2766-sudo"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Phi Nguyễn on GitHub"
+              title="Open GitHub profile"
+            >
+              Phi Nguyễn
+            </a>
+            {t.projectCreditJoin}
+            <a
+              href="https://github.com/HenryParker37-VIP"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Henry Parker on GitHub"
+              title="Open GitHub profile"
+            >
+              Henry Parker
+            </a>
+          </strong>
+          <span>
+            {t.websiteCreditLead}
+            <a
+              href="https://github.com/HenryParker37-VIP"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Henry Parker (Nguyen Manh Tuan Hưng) on GitHub"
+              title="Open GitHub profile"
+            >
+              {t.websiteCreditName}
+            </a>
+          </span>
         </div>
         <a href={release.source}>
           {t.source}
