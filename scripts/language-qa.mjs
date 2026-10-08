@@ -27,7 +27,8 @@ try {
   await page.getByRole('button', { name: 'Raid', exact: true }).click();
   assert.ok((await page.locator('.system-copy').innerText()).includes('The Drowned Regent'));
   await page.locator('#systems').evaluate((el) => window.scrollTo({ top: el.getBoundingClientRect().top + scrollY - 240, behavior: 'instant' }));
-  const beforeSwitch = await page.evaluate(() => ({ scrollY, lang: document.documentElement.lang, languageRect: document.querySelector('.language').getBoundingClientRect().toJSON(), heroOpacity: getComputedStyle(document.querySelector('.hero-title')).opacity }));
+  await page.waitForTimeout(350);
+  const beforeSwitch = await page.evaluate(() => ({ scrollY, lang: document.documentElement.lang, languageRect: document.querySelector('.language').getBoundingClientRect().toJSON(), heroOpacity: getComputedStyle(document.querySelector('.hero-title')).opacity, heroTransform: getComputedStyle(document.querySelector('.hero-title')).transform }));
   await page.getByRole('button', { name: 'Switch to Tiếng Việt' }).click();
   assert.equal(await page.evaluate(() => document.documentElement.lang), 'vi');
   assert.equal(await page.evaluate(() => localStorage.getItem('abyss-site-language')), 'vi');
@@ -38,7 +39,8 @@ try {
   assert.ok((await page.locator('.system-copy').innerText()).includes('Tiến vào'), 'generic Raid explanation is translated');
   const languageRectAfter = await page.locator('.language').evaluate((el) => el.getBoundingClientRect().toJSON());
   for (const edge of ['x', 'y', 'width', 'height']) assert.ok(Math.abs(languageRectAfter[edge] - beforeSwitch.languageRect[edge]) <= 1, `language control ${edge} remains stable`);
-  assert.ok(Number(await page.locator('.hero-title').evaluate((el) => getComputedStyle(el).opacity)) < 0.1 && Number(beforeSwitch.heroOpacity) < 0.1, 'language change does not replay the opening animation');
+  const afterHero = await page.locator('.hero-title').evaluate((el) => ({ opacity: getComputedStyle(el).opacity, transform: getComputedStyle(el).transform }));
+  assert.ok(Math.abs(Number(afterHero.opacity) - Number(beforeSwitch.heroOpacity)) <= 0.02 && afterHero.transform === beforeSwitch.heroTransform, 'language change does not replay the opening animation');
   assert.equal(await page.locator('.language').getAttribute('aria-label'), 'Chuyển sang tiếng Anh');
   await page.screenshot({ path: '/tmp/abyss-language-desktop.png', fullPage: false });
 
