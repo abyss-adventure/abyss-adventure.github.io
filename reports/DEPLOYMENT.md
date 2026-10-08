@@ -15,13 +15,13 @@ Verified 8 October 2026, Asia/Ho_Chi_Minh.
 - Local remote `origin`: `https://github.com/abyss-adventure/abyss-adventure.github.io.git`.
 - `main`, full existing git history, Pages Actions workflow, website assets, EN/VI content, QA files, and prerelease asset remain present. Source repo had zero issues/assignees at transfer time.
 - Vite now builds for `/`. All runtime images use `import.meta.env.BASE_URL`; canonical/OG/Twitter/JSON-LD, icon, sitemap, robots, and APK release links use the organization root.
-- Pages is configured with GitHub Actions. The organization-root build has 385 passing checks; eight Chrome/WebKit desktop/mobile viewport cases pass locally, including refresh, localization, media, landscape, touch, motion, audio control, download metadata and iOS Coming Soon. GitHub Pages workflow [37714553488](https://github.com/abyss-adventure/abyss-adventure.github.io/actions/runs/37714553488) completed successfully for code commit `822cfb495fbcbc58bbaf64b52f9b9d52e364d13f`. The live page, assets, metadata and desktop/mobile language persistence were then verified against that build; see `live-verification.json`.
+- Pages is configured with GitHub Actions. The live site bundle was deployed successfully by [workflow 37746599341](https://github.com/abyss-adventure/abyss-adventure.github.io/actions/runs/37746599341) from website content commit `a822afe11202898be0404b385a30d34ff9e4598f`. A later documentation-only commit refreshes this verification record without changing the site bundle. The live EN/VI site, refresh and language persistence, links, iOS Coming Soon state, safe viewport widths, media and accessibility controls were verified in Chrome and WebKit at desktop, iPhone, Android and narrow viewports. All eight cases passed with no runtime errors or failed resources. The live verification record includes deployed bundle hashes and download checks.
 
 ## Android APK
 
-Release: https://github.com/abyss-adventure/abyss-adventure.github.io/releases/tag/android-preview-1.2.1-57-d0bcd5a
+Release: https://github.com/abyss-adventure/abyss-adventure.github.io/releases/tag/android-1.2.1-58-complete
 
-GitHub release asset digest remains SHA-256 `916108e500cf96e436efad29bb31a96c1164faa4f490fc7cdf4aad5f6cb47933`, size `138786779` bytes. The transferred binary is unchanged.
+Build 1.2.1 (58), package `com.nah.abyssadventure`, minimum Android API 24, exact tested source commit `952f483ca500679a80ca2c02fc7da687434053aa` on `project-1`. The public APK is `Abyss-Adventure-1.2.1-58-Complete-Android.apk`, 138689263 bytes, SHA-256 `8d9afa9b7dda033d97eb6a029384c10c48b9ab1cfb65f2f89f21561e5238a9e2`. It installs and launches on the API 35 ARM64 emulator and is signed with the Android debug certificate; it is a testing build, not production-stable. The live release download was fetched and matched the local artifact SHA-256.
 
 ## Phi and game repository
 
