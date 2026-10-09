@@ -33,7 +33,7 @@ No AI-generated images are used. Social preview is an original-art composition; 
 5. Update the pinned candidate assertions in `scripts/check.mjs` only as part of an intentional release update.
 6. Verify the public download bytes/checksum and both-language metadata.
 
-Current package identity: `com.nah.abyssadventure`. Public build 59 has Test Tools disabled and is debug-signed, not production-signed. Show Android as available, and state the signing caveat clearly. GitHub Releases provide the APK; never commit the binary into Git history.
+Current website download: internal QA package `com.nah.abyssadventure.qa`, version 1.2.1 build 59. Test Tools are enabled; the APK is debug-signed, not production-signed, and intended for testing only. State those caveats clearly. GitHub Releases provide the APK; never commit the binary into Git history.
 
 ## iOS
 

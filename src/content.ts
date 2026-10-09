@@ -2,16 +2,16 @@ export type Lang = "en" | "vi";
 export const release = {
   version: "1.2.1",
   build: 59,
-  bytes: 138662664,
+  bytes: 144344275,
   minimumAndroid: "7.0",
-  date: "2026-10-08",
-  commit: "f5b89ce30c69c88b9b94d45782e295c1fd546457",
-  sha256: "7be2b0d8430f043fd1ca4c84300498cf7270f5933b6dabc211ead22aa17a52fb",
-  filename: "Abyss-Adventure-1.2.1-59-Public-Android.apk",
-  tag: "android-1.2.1-59-public",
+  date: "2026-10-09",
+  commit: "97934d25ee984811bc022a28456e9b3b06662404",
+  sha256: "d21ddf67cdc0232bd9f9bd58996855e77e40eeb2b530a91ca8409803df47ac0b",
+  filename: "Abyss-Adventure-1.2.1-59-Phi-QA.apk",
+  tag: "android-1.2.1-59-phi-qa",
   repository: "https://github.com/abyss-adventure/abyss-adventure.github.io",
   source:
-    "https://github.com/haohao2766-sudo/ABYSS-ADVENTURE/tree/f5b89ce30c69c88b9b94d45782e295c1fd546457",
+    "https://github.com/haohao2766-sudo/ABYSS-ADVENTURE/tree/97934d25ee984811bc022a28456e9b3b06662404",
 };
 export const releaseUrl = `${release.repository}/releases/tag/${release.tag}`;
 export const downloadUrl = `${release.repository}/releases/download/${release.tag}/${release.filename}`;
@@ -219,7 +219,7 @@ export const copy = {
     finalTitle: "How deep\nwill you go?",
     preview: "Android — Available",
     previewNote:
-      "Debug-signed Android build. Test Tools are disabled in this public build; it is not production-signed.",
+      "Debug-signed QA build with Test Tools enabled. For testing only; not production-signed.",
     download: "Download for Android",
     releaseNotes: "Release notes",
     android: "Android",
@@ -435,7 +435,7 @@ export const copy = {
     finalTitle: "Bạn sẽ đi\nsâu đến đâu?",
     preview: "Android — Có thể tải xuống",
     previewNote:
-      "Bản Android ký bằng khóa debug. Công cụ kiểm thử đã bị tắt trong bản công khai này; APK chưa được ký phát hành.",
+      "Bản QA Android ký bằng khóa debug, có bật Công cụ kiểm thử. Chỉ dùng để kiểm thử; APK chưa được ký phát hành.",
     download: "Tải xuống cho Android",
     releaseNotes: "Ghi chú bản phát hành",
     android: "Android",
