@@ -1,17 +1,17 @@
 export type Lang = "en" | "vi";
 export const release = {
   version: "1.2.1",
-  build: 59,
-  bytes: 144344275,
+  build: 60,
+  bytes: 145537406,
   minimumAndroid: "7.0",
-  date: "2026-10-09",
-  commit: "97934d25ee984811bc022a28456e9b3b06662404",
-  sha256: "d21ddf67cdc0232bd9f9bd58996855e77e40eeb2b530a91ca8409803df47ac0b",
-  filename: "Abyss-Adventure-1.2.1-59-Phi-QA.apk",
-  tag: "android-1.2.1-59-phi-qa",
+  date: "2026-10-12",
+  commit: "e09b97efd719e0ae0b55ab97d83dea94afe339de",
+  sha256: "d1a483566e29f043025c144133736a92f70d2ee99239edbfaa7cedb0c9978a42",
+  filename: "Abyss-Adventure-1.2.1-60-Phi-QA.apk",
+  tag: "android-1.2.1-60-phi-qa",
   repository: "https://github.com/abyss-adventure/abyss-adventure.github.io",
   source:
-    "https://github.com/haohao2766-sudo/ABYSS-ADVENTURE/tree/97934d25ee984811bc022a28456e9b3b06662404",
+    "https://github.com/haohao2766-sudo/ABYSS-ADVENTURE/tree/e09b97efd719e0ae0b55ab97d83dea94afe339de",
 };
 export const releaseUrl = `${release.repository}/releases/tag/${release.tag}`;
 export const downloadUrl = `${release.repository}/releases/download/${release.tag}/${release.filename}`;
