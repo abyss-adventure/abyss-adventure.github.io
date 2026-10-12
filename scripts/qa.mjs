@@ -19,9 +19,9 @@ for(const kind of ['chrome','webkit']){
  await p.getByRole('button',{name:'Ashspirit Bronze Staff',exact:true}).click();assert.equal(await p.locator('.gear-info h3').innerText(),'Ashspirit Bronze Staff');
  await p.locator('.system-select').evaluate(e=>window.scrollTo({top:e.getBoundingClientRect().top+scrollY-200,behavior:'instant'}));await p.waitForTimeout(250);if(width<500)await p.getByRole('button',{name:'Raid',exact:true}).tap();else await p.getByRole('button',{name:'Raid',exact:true}).click();await p.waitForFunction(()=>document.querySelector('.system-copy').textContent.includes('The Drowned Regent'));assert.ok((await p.locator('.system-copy').innerText()).includes('The Drowned Regent'));
  for(const id of ['world','creator','characters','systems','download']){await p.locator('#'+id).scrollIntoViewIfNeeded();await p.waitForTimeout(300);assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,`${id} overflow`)}
- const apk=await p.locator('.primary-download').getAttribute('href');assert.ok(apk.endsWith('Abyss-Adventure-1.2.1-60-Phi-QA.apk'));assert.equal(await p.locator('a[href$=".ipa"]').count(),0);
+ const apk=await p.locator('.primary-download').getAttribute('href');assert.ok(apk.endsWith('Abyss-Adventure-1.2.1-61-Phi-QA.apk'));assert.equal(await p.locator('a[href$=".ipa"]').count(),0);
  assert.equal(await p.locator('.android-release h3').innerText(),await p.locator('html').getAttribute('lang')==='vi'?'Android — Có thể tải xuống':'Android — Available');
- await p.locator('.technical summary').click();assert.ok((await p.locator('.technical').innerText()).includes('d1a483566e29f043025c144133736a92f70d2ee99239edbfaa7cedb0c9978a42'));
+ await p.locator('.technical summary').click();assert.ok((await p.locator('.technical').innerText()).includes('00c44dab70234b28a33ed4101ea0f809ac70537119c624f429fa8695437982ef'));
  assert.equal(await p.locator('.creator-notebook').count(),0);
  await p.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}));await p.waitForTimeout(200);
  await p.locator('.language').click();assert.equal(await p.locator('html').getAttribute('lang'),'en');

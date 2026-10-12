@@ -1,17 +1,17 @@
 export type Lang = "en" | "vi";
 export const release = {
   version: "1.2.1",
-  build: 60,
-  bytes: 145537406,
+  build: 61,
+  bytes: 145537462,
   minimumAndroid: "7.0",
-  date: "2026-10-12",
-  commit: "e09b97efd719e0ae0b55ab97d83dea94afe339de",
-  sha256: "d1a483566e29f043025c144133736a92f70d2ee99239edbfaa7cedb0c9978a42",
-  filename: "Abyss-Adventure-1.2.1-60-Phi-QA.apk",
-  tag: "android-1.2.1-60-phi-qa",
+  date: "2026-10-13",
+  commit: "e180de369f4382470b6a9e4df36f49242a565e1d",
+  sha256: "00c44dab70234b28a33ed4101ea0f809ac70537119c624f429fa8695437982ef",
+  filename: "Abyss-Adventure-1.2.1-61-Phi-QA.apk",
+  tag: "android-1.2.1-61-phi-qa",
   repository: "https://github.com/abyss-adventure/abyss-adventure.github.io",
   source:
-    "https://github.com/haohao2766-sudo/ABYSS-ADVENTURE/tree/e09b97efd719e0ae0b55ab97d83dea94afe339de",
+    "https://github.com/haohao2766-sudo/ABYSS-ADVENTURE/tree/e180de369f4382470b6a9e4df36f49242a565e1d",
 };
 export const releaseUrl = `${release.repository}/releases/tag/${release.tag}`;
 export const downloadUrl = `${release.repository}/releases/download/${release.tag}/${release.filename}`;
@@ -219,7 +219,7 @@ export const copy = {
     finalTitle: "How deep\nwill you go?",
     preview: "Android — Available",
     previewNote:
-      "Debug-signed QA build with Test Tools enabled. For testing only; not production-signed.",
+      "Debug-signed QA build with Test Tools enabled and default EXP ×50,000, drops ×100, and Summon ×100 tickets. For testing only; not production-signed.",
     download: "Download for Android",
     releaseNotes: "Release notes",
     android: "Android",
@@ -435,7 +435,7 @@ export const copy = {
     finalTitle: "Bạn sẽ đi\nsâu đến đâu?",
     preview: "Android — Có thể tải xuống",
     previewNote:
-      "Bản QA Android ký bằng khóa debug, có bật Công cụ kiểm thử. Chỉ dùng để kiểm thử; APK chưa được ký phát hành.",
+      "Bản QA Android ký bằng khóa debug, có bật Công cụ kiểm thử và mặc định EXP ×50.000, vật phẩm rơi ×100, vé Triệu hồi ×100. Chỉ dùng để kiểm thử; APK chưa được ký phát hành.",
     download: "Tải xuống cho Android",
     releaseNotes: "Ghi chú bản phát hành",
     android: "Android",
