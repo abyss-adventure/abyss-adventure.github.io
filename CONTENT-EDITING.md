@@ -33,7 +33,7 @@ No AI-generated images are used. Social preview is an original-art composition; 
 5. Update the pinned candidate assertions in `scripts/check.mjs` only as part of an intentional release update.
 6. Verify the public download bytes/checksum and both-language metadata.
 
-Current website download: internal QA package `com.nah.abyssadventure.qa`, version 1.2.1 build 61. Test Tools are enabled; the APK is debug-signed, not production-signed, and intended for testing only. State those caveats clearly. GitHub Releases provide the APK; never commit the binary into Git history.
+Current website download: internal QA package `com.nah.abyssadventure.qa`, version 1.2.1 build 62. Test Tools are enabled; the APK is debug-signed, not production-signed, and intended for testing only. State those caveats clearly. GitHub Releases provide the APK; never commit the binary into Git history.
 
 ## iOS
 

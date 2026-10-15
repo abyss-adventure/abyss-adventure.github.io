@@ -1,17 +1,17 @@
 export type Lang = "en" | "vi";
 export const release = {
   version: "1.2.1",
-  build: 61,
-  bytes: 145537462,
+  build: 62,
+  bytes: 145730248,
   minimumAndroid: "7.0",
-  date: "2026-10-13",
-  commit: "e180de369f4382470b6a9e4df36f49242a565e1d",
-  sha256: "00c44dab70234b28a33ed4101ea0f809ac70537119c624f429fa8695437982ef",
-  filename: "Abyss-Adventure-1.2.1-61-Phi-QA.apk",
-  tag: "android-1.2.1-61-phi-qa",
+  date: "2026-10-15",
+  commit: "b9ffa723776e66d30296863c39eedc071785b09d",
+  sha256: "99da865751e3381780517e6dc1e2936efff00654572fb33243080432f28cccc0",
+  filename: "Abyss-Adventure-1.2.1-62-Phi-QA.apk",
+  tag: "android-1.2.1-62-phi-qa",
   repository: "https://github.com/abyss-adventure/abyss-adventure.github.io",
   source:
-    "https://github.com/haohao2766-sudo/ABYSS-ADVENTURE/tree/e180de369f4382470b6a9e4df36f49242a565e1d",
+    "https://github.com/haohao2766-sudo/ABYSS-ADVENTURE/tree/b9ffa723776e66d30296863c39eedc071785b09d",
 };
 export const releaseUrl = `${release.repository}/releases/tag/${release.tag}`;
 export const downloadUrl = `${release.repository}/releases/download/${release.tag}/${release.filename}`;
@@ -219,7 +219,7 @@ export const copy = {
     finalTitle: "How deep\nwill you go?",
     preview: "Android — Available",
     previewNote:
-      "Debug-signed QA build with Test Tools enabled and default EXP ×50,000, drops ×100, and Summon ×100 tickets. For testing only; not production-signed.",
+      "Debug-signed QA build with Test Tools enabled. QA defaults: EXP ×50,000 and drops ×100; new saves start with 1 Summon Ticket, and Test Tools can refill manually. Includes the approved Design01 presentation and Map 3 cumulative-win fix. Map 5 readiness and Map 6 balance remain under review. Testing only; not production-signed.",
     download: "Download for Android",
     releaseNotes: "Release notes",
     android: "Android",
@@ -435,7 +435,7 @@ export const copy = {
     finalTitle: "Bạn sẽ đi\nsâu đến đâu?",
     preview: "Android — Có thể tải xuống",
     previewNote:
-      "Bản QA Android ký bằng khóa debug, có bật Công cụ kiểm thử và mặc định EXP ×50.000, vật phẩm rơi ×100, vé Triệu hồi ×100. Chỉ dùng để kiểm thử; APK chưa được ký phát hành.",
+      "Bản QA Android ký bằng khóa debug, có bật Công cụ kiểm thử. Mặc định QA: EXP ×50.000 và vật phẩm rơi ×100; save mới bắt đầu với 1 Vé Triệu hồi, có thể nạp thủ công bằng Công cụ kiểm thử. Bản này tích hợp phần trình bày Design01 đã duyệt và sửa tiến trình Map 3 sang 30 chiến thắng cộng dồn. Readiness Map 5 và cân bằng Map 6 vẫn đang được xem xét. Chỉ dùng để kiểm thử; APK chưa được ký phát hành.",
     download: "Tải xuống cho Android",
     releaseNotes: "Ghi chú bản phát hành",
     android: "Android",

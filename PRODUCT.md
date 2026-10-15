@@ -13,7 +13,7 @@ Original game artwork is authoritative: subterranean ruins, worn iron, dark ston
 Native scrolling creates a descent: title/camera push, world exploration, creator and source-to-world reveal, classes, equipment, connected systems, real gameplay, final download. Desktop has restrained depth; mobile uses shorter scenes and touch controls. Reduced motion keeps every story beat visible. Sound is opt-in.
 
 ## Verified facts
-Game source e180de369f4382470b6a9e4df36f49242a565e1d, version 1.2.1 build 61, QA package com.nah.abyssadventure.qa, minimum Android API24. Test Tools are enabled. The APK is debug-signed and intended for testing only, not a production release. iOS remains Coming Soon.
+Game source b9ffa723776e66d30296863c39eedc071785b09d, version 1.2.1 build 62, QA package com.nah.abyssadventure.qa, minimum Android API24. Test Tools are enabled. The APK is debug-signed and intended for testing only, not a production release. iOS remains Coming Soon.
 
 ## Open creator content
 Phi's first development date, original prototype image, approved first-person quote, personal motivation and creator links are unknown. Use internal structured placeholders, editable centrally; do not invent them. User was asked for these details.
