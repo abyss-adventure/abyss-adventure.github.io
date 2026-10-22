@@ -1,0 +1,24 @@
+{
+  "viewport": [
+    390,
+    844
+  ],
+  "actions": 90,
+  "before": {
+    "usedSize": 3702580,
+    "totalSize": 4587520,
+    "embedderHeapUsedSize": 2048176,
+    "backingStorageSize": 391381
+  },
+  "after": {
+    "usedSize": 3835912,
+    "totalSize": 4849664,
+    "embedderHeapUsedSize": 2180320,
+    "backingStorageSize": 392433
+  },
+  "nodesBefore": 440,
+  "nodesAfter": 440,
+  "heapGrowthBytes": 133332,
+  "passed": true,
+  "limits": "Short Chromium emulation with forced GC; does not certify long-running physical mobile memory or WebKit process memory."
+}

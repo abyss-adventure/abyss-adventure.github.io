@@ -58,13 +58,13 @@ Alegreya supplies a recognizable literary display voice. Be Vietnam Pro supports
 
 ## Layout
 
-Desktop uses broad scenes and paired editorial columns, with content generally bounded near1280–1440px. Below760px the creator, class and release layouts stack. At1050px intermediate gaps shrink. System controls wrap on narrow screens; class controls stay in a three-part row. No side-by-side card grid forms the page structure.
+Desktop uses broad scenes and paired editorial columns, with content generally bounded near1280–1440px. Below760px the guide, class and release layouts stack. At1050px intermediate gaps shrink. System controls wrap on narrow screens; class controls stay in a three-part row. No side-by-side card grid forms the page structure.
 
 **The Breathing Room Rule.** Large imagery alternates with quieter reading passages; do not assign every scene identical density.
 
 ## Elevation & Depth
 
-Depth comes from original environments, tonal overlays and scroll transforms. Portraits and equipment have soft downward shadows. Containers remain flat. The opening title grows beyond the viewport while the environment advances more slowly; the source scene reveals the real game capture through a clipped layer.
+Depth comes from original environments, tonal overlays and scroll transforms. Portraits and equipment have soft downward shadows. Containers remain flat. The opening title grows beyond the viewport while the environment advances more slowly; the current screenshots show the real game interface.
 
 **The Native Scroll Rule.** GSAP reads the browser scroll position; it never replaces wheel or touch scrolling. Reduced motion removes the camera transforms and sticky reveal length while retaining content.
 

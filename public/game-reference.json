@@ -1,0 +1,111 @@
+{
+  "sourceCommit": "6e35a4221a27916aae0599a9cd00645f3d48ee20",
+  "runtimePath": "releases/open-beta-v1.0/web/assets/gameplay-open-beta-v1-8d10f65e4b78.js",
+  "runtimeSha256": "8d10f65e4b78fdb71e48d6e88ae5e8ae6cddd403db892181b17c714bd295947b",
+  "classPaths": [
+    [
+      "Warrior",
+      "Fighter",
+      "Duelist",
+      "Berserker",
+      "Destroyer"
+    ],
+    [
+      "Warrior",
+      "Fighter",
+      "Crusader",
+      "Battle Slayer",
+      "Valkyrie"
+    ],
+    [
+      "Warrior",
+      "Knight",
+      "Paladin",
+      "Guardian",
+      "Aegis"
+    ],
+    [
+      "Warrior",
+      "Knight",
+      "Vanguard",
+      "Warbringer",
+      "Dreadlord"
+    ],
+    [
+      "Mage",
+      "Wizard",
+      "Elemental",
+      "Arcanister",
+      "Chaos Weaver"
+    ],
+    [
+      "Mage",
+      "Wizard",
+      "Summoner",
+      "Necromancer",
+      "Devil Lich"
+    ],
+    [
+      "Mage",
+      "Cleric",
+      "Priest",
+      "Hierophant",
+      "Soul Saint"
+    ],
+    [
+      "Mage",
+      "Cleric",
+      "Battle Mage",
+      "Templar",
+      "Inquisitor"
+    ],
+    [
+      "Rogue",
+      "Assassin",
+      "Mist Dancer",
+      "Soul Dancer",
+      "Spectral Dancer"
+    ],
+    [
+      "Rogue",
+      "Assassin",
+      "Nightwalker",
+      "Shadowstalker",
+      "Void Reaper"
+    ],
+    [
+      "Rogue",
+      "Sniper",
+      "Dead Eye",
+      "Rift Scout",
+      "Soul Sniper"
+    ],
+    [
+      "Rogue",
+      "Sniper",
+      "Heartmarksman",
+      "Apex Alpha",
+      "Tempest Gale"
+    ]
+  ],
+  "mapNames": [
+    "Ashwood Forest",
+    "Graymist Hills",
+    "Wild Marsh",
+    "Forgotten Cemetery",
+    "Lament Mine",
+    "Hanging Village",
+    "Blood Monastery",
+    "Cursed Citadel",
+    "Bone Valley",
+    "Soul-Devouring Abyss"
+  ],
+  "signatureSkills": [
+    "Heavy Strike",
+    "Arcane Burst",
+    "Twin Strike",
+    "Unyielding Fortress",
+    "Necromantic Summon",
+    "Shadow Strike"
+  ]
+}

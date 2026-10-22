@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import { chromium } from 'playwright';
 
-const browser = await chromium.launch({ channel: 'chrome' });
+const browser = await chromium.launch({});
 const results = [];
 const baseUrl = process.env.LANGUAGE_QA_URL ?? 'http://127.0.0.1:4174/';
 try {
@@ -23,7 +23,7 @@ try {
   await page.getByRole('button', { name: 'Switch to Tiếng Việt' }).waitFor();
 
   const footerText = async () => (await page.locator('footer').innerText()).replace(/\s+/g, ' ');
-  assert.ok((await footerText()).includes('Abyss Adventure · Phi Nguyễn × Henry Parker'));
+  assert.ok((await footerText()).includes('Abyss Adventure — Phi Nguyễn × Henry Parker'));
   assert.ok((await footerText()).includes('Website by Henry Parker (Nguyen Manh Tuan Hưng)'));
   for (const [label, href] of [
     ['Phi Nguyễn on GitHub', 'https://github.com/haohao2766-sudo'],
@@ -40,7 +40,7 @@ try {
 
   await page.getByRole('button', { name: 'Lament Mine' }).click();
   assert.equal(await page.locator('.world-caption h3').innerText(), 'Lament Mine');
-  await page.getByRole('button', { name: 'Raid', exact: true }).click();
+  await page.getByRole('button', { name: 'Raids', exact: true }).click();
   assert.ok((await page.locator('.system-copy').innerText()).includes('The Drowned Regent'));
   await page.locator('#systems').evaluate((el) => window.scrollTo({ top: el.getBoundingClientRect().top + scrollY - 240, behavior: 'instant' }));
   await page.waitForTimeout(350);
@@ -51,7 +51,7 @@ try {
   });
   await page.getByRole('button', { name: 'Switch to Tiếng Việt' }).click();
   assert.equal(await page.evaluate(() => document.documentElement.lang), 'vi');
-  assert.ok((await footerText()).includes('Abyss Adventure · Phi Nguyễn × Henry Parker'));
+  assert.ok((await footerText()).includes('Abyss Adventure — Phi Nguyễn × Henry Parker'));
   assert.ok((await footerText()).includes('Website được thực hiện bởi Henry Parker (Nguyen Manh Tuan Hưng)'));
   assert.equal(await page.locator('footer a[aria-label="Phi Nguyễn trên GitHub"]').getAttribute('title'), 'Mở hồ sơ GitHub');
   assert.equal(await page.locator('footer a[aria-label="Henry Parker trên GitHub"]').getAttribute('href'), 'https://github.com/HenryParker37-VIP');
@@ -60,7 +60,7 @@ try {
   assert.ok(Math.abs(afterViScroll - beforeSwitch.scrollY) <= 1, 'EN to VI preserves scroll position');
   assert.equal(await page.locator('.world-caption h3').innerText(), 'Lament Mine');
   assert.ok((await page.locator('.system-copy').innerText()).includes('The Drowned Regent'));
-  assert.ok((await page.locator('.system-copy').innerText()).includes('Tiến vào'), 'generic Raid explanation is translated');
+  assert.ok((await page.locator('.system-copy').innerText()).includes('Blackwake Descent'), 'generic Raid explanation is translated');
   const languageRectAfter = await page.locator('.language').evaluate((el) => el.getBoundingClientRect().toJSON());
   for (const edge of ['x', 'y', 'width', 'height']) assert.ok(Math.abs(languageRectAfter[edge] - beforeSwitch.languageRect[edge]) <= 1, `language control ${edge} remains stable`);
   const afterHero = await page.locator('.hero-title').evaluate((el) => {
@@ -125,7 +125,7 @@ try {
   await page.reload();
   await page.keyboard.press('Tab');
   assert.equal(await page.evaluate(() => document.activeElement.className), 'skip', 'skip link remains first keyboard stop');
-  for (let i = 0; i < 4; i++) await page.keyboard.press('Tab');
+  for (let i = 0; i < 5; i++) await page.keyboard.press('Tab');
   assert.equal(await page.evaluate(() => document.activeElement.className), 'language', 'language switcher is keyboard reachable');
   assert.equal(await page.locator('.language').getAttribute('aria-label'), 'Switch to Tiếng Việt');
   await page.keyboard.press('Enter');

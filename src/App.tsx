@@ -3,7 +3,6 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {
   copy,
-  creatorStory,
   downloadUrl,
   release,
   releaseUrl,
@@ -11,6 +10,7 @@ import {
 } from "./content";
 import "./style.css";
 import dimensions from "./image-dimensions.json";
+import { guide, classPaths } from "./game-guide";
 gsap.registerPlugin(ScrollTrigger);
 const media = (name: string) => `${import.meta.env.BASE_URL}media/${name}.webp`;
 function Arrow({ down = false }: { down?: boolean }) {
@@ -89,7 +89,7 @@ function Art({
       src={media(name)}
       srcSet={
         responsive
-          ? `${media(name + "-small")} 800w, ${media(name)} 1600w`
+          ? `${media(name + "-small")} ${dimensions[(name + "-small") as keyof typeof dimensions]?.[0] ?? 800}w, ${media(name)} ${dimensions[name as keyof typeof dimensions]?.[0] ?? 1600}w`
           : undefined
       }
       sizes={responsive ? "100vw" : undefined}
@@ -109,6 +109,16 @@ export default function App() {
     }
   });
   const t = copy[lang];
+  const info = guide[lang];
+  const [advanced, setAdvanced] = useState(false);
+  const [step, setStep] = useState(0);
+  const guideDetail = useRef<HTMLDivElement>(null);
+  function selectStep(index: number) {
+    setStep(index);
+    if (window.innerWidth <= 760) requestAnimationFrame(() => guideDetail.current?.scrollIntoView({
+      block: "start", behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth"
+    }));
+  }
   const [world, setWorld] = useState(0),
     [character, setCharacter] = useState(0),
     [gear, setGear] = useState(0),
@@ -223,31 +233,7 @@ export default function App() {
           )
           .to(".hero-bottom", { opacity: 0, ease: "none" }, 0);
         gsap.fromTo(
-          ".evolution-game",
-          { clipPath: "inset(0 0 100% 0)" },
-          {
-            clipPath: "inset(0 0 0% 0)",
-            ease: "none",
-            scrollTrigger: {
-              trigger: ".evolution",
-              start: "top 30%",
-              end: "bottom 80%",
-              scrub: 0.6,
-            },
-          },
-        );
-        gsap.to(".evolution-source", {
-          opacity: 0.15,
-          ease: "none",
-          scrollTrigger: {
-            trigger: ".evolution",
-            start: "top 30%",
-            end: "bottom 80%",
-            scrub: 0.6,
-          },
-        });
-        gsap.fromTo(
-          ".class-portrait",
+          ".class-art",
           { y: 35 },
           {
             y: -25,
@@ -276,7 +262,7 @@ export default function App() {
     return () => mm.revert();
   }, []);
   const place = t.worlds[world],
-    hero = t.classes[character],
+    hero = advanced ? t.classes[character] : info.baseClasses[character],
     item = t.gear[gear],
     feature = t.systems[system];
   return (
@@ -291,7 +277,8 @@ export default function App() {
         </a>
         <nav aria-label={t.mainNavigation}>
           <a href="#world">{t.world}</a>
-          <a href="#creator">{t.creator}</a>
+          <a href="#characters">{lang === "en" ? "Characters" : "Nhân vật"}</a>
+          <a href="#how-to-play">{info.navigation}</a>
         </nav>
         <div className="header-actions">
           <button
@@ -335,6 +322,10 @@ export default function App() {
                 ABYSS<span>ADVENTURE</span>
               </h1>
               <p>{t.heroLine}</p>
+              <div className="hero-invitation">
+                <a className="hero-cta" href="#download">{t.play}<Arrow down /></a>
+                <a className="hero-guide" href="#how-to-play">{info.navigation}<Arrow /></a>
+              </div>
             </div>
             <div className="hero-bottom">
               <p>{t.heroSub}</p>
@@ -342,7 +333,7 @@ export default function App() {
                 {t.descend}
                 <Arrow down />
               </a>
-              <span>EN / VI · ANDROID</span>
+              <span>OPEN BETA · ANDROID 7.0+</span>
             </div>
             <div className="edge-coordinate" aria-hidden="true">
               ABYSS ADVENTURE / PHI NGUYỄN × HENRY PARKER
@@ -362,7 +353,8 @@ export default function App() {
             <Art
               name={place.image}
               alt={place.name}
-              className="world-art"
+              className="world-art scene-enter"
+              key={place.image}
               responsive
             />
             <div className="world-vignette" />
@@ -376,99 +368,20 @@ export default function App() {
                 <p>{place.detail}</p>
               </div>
             </div>
-            <div
-              className="world-route"
-              role="group"
-              aria-label={t.chooseLocation}
-            >
-              {t.worlds.map((w, i) => (
-                <button
-                  key={w.name}
-                  onClick={() => setWorld(i)}
-                  aria-pressed={world === i}
-                >
-                  <span className="route-dot" />
-                  {w.name}
-                </button>
-              ))}
-            </div>
           </div>
-          <p className="caption">{t.originalArt}</p>
-        </section>
-        <section
-          className="creator section"
-          id="creator"
-          aria-labelledby="creator-title"
-        >
-          <div className="creator-heading">
-            <h2 id="creator-title">{t.creatorTitle}</h2>
-            <div>
-              <p className="creator-name">{t.creatorLine}</p>
-              <p>{t.creatorIntro}</p>
-            </div>
+          <div className="world-controls">
+            <button onClick={() => setWorld((world + 9) % 10)} aria-label={info.previousMap}><Arrow /></button>
+            <span>{place.index} / 10</span>
+            <button onClick={() => setWorld((world + 1) % 10)} aria-label={info.nextMap}><Arrow /></button>
           </div>
-          <div className="evolution">
-            <div className="evolution-sticky">
-              <div className="evolution-visual">
-                <div className="evolution-source">
-                  <span>{t.sourceLabel}</span>
-                  <pre>
-                    <code>{`classPaths: [\n  ["Warrior", "Knight",\n   "Paladin", "Guardian"],\n\n  ["Mage", "Wizard",\n   "Summoner", "Necromancer"],\n\n  ["Rogue", "Assassin"]\n]`}</code>
-                  </pre>
-                  <span>
-                    packages/content/data.json ·{" "}
-                    {t.excerpt}
-                  </span>
-                </div>
-                <div className="evolution-game">
-                  <Art name="game-world" alt={t.screenAlt} />
-                  <span>{t.gameLabel}</span>
-                </div>
-              </div>
-              <div className="evolution-copy">
-                <h3>{t.buildQuote}</h3>
-                <p>{t.buildNote}</p>
-              </div>
-            </div>
-          </div>
-          <div className="milestones">
-            <h3>{t.milestoneTitle}</h3>
-            {t.milestones.map((m, i) => (
-              <article key={m.title}>
-                <time dateTime={i === 0 ? "2026-10-06" : "2026-10-07"}>
-                  {m.date}
-                </time>
-                <h4>{m.title}</h4>
-                <p>{m.body}</p>
-              </article>
+          <div className="world-route" role="group" aria-label={t.chooseLocation}>
+            {t.worlds.map((w, i) => (
+              <button key={w.name} onClick={() => setWorld(i)} aria-pressed={world === i} aria-label={w.name}>
+                <span className="route-number">{w.index}</span><span>{w.name}</span>
+              </button>
             ))}
           </div>
-          {(creatorStory.quote ||
-            creatorStory.origin ||
-            creatorStory.started ||
-            creatorStory.milestones ||
-            creatorStory.links.length > 0) && (
-            <div className="creator-notebook">
-              {creatorStory.quote && (
-                <blockquote>{creatorStory.quote}</blockquote>
-              )}
-              {[
-                creatorStory.origin,
-                creatorStory.started,
-                creatorStory.milestones,
-              ]
-                .filter(Boolean)
-                .map((text, i) => (
-                  <p key={i}>{text}</p>
-                ))}
-              {creatorStory.links.map((link) => (
-                <a className="text-link" key={link.url} href={link.url}>
-                  {link.label}
-                  <Arrow />
-                </a>
-              ))}
-            </div>
-          )}
+          <p className="caption">{t.originalArt}</p>
         </section>
         <section
           className="classes section"
@@ -478,27 +391,6 @@ export default function App() {
           <div className="section-heading">
             <h2 id="classes-title">{t.classesTitle}</h2>
             <p>{t.classesIntro}</p>
-          </div>
-          <div className="class-scene">
-            <span className="class-watermark" aria-hidden="true">
-              {hero.base}
-            </span>
-            <div className="class-art">
-              <Art
-                name={hero.image}
-                alt={hero.name}
-                className="class-portrait"
-              />
-            </div>
-            <div className="class-detail" aria-live="polite">
-              <h3>{hero.name}</h3>
-              <p className="class-path">{hero.path}</p>
-              <p>{hero.detail}</p>
-              <div className="skill-detail">
-                <span>{t.skill}</span>
-                <strong>{hero.skill}</strong>
-              </div>
-            </div>
           </div>
           <div className="class-select" role="group" aria-label={t.chooseClass}>
             {t.classes.map((c, i) => (
@@ -512,6 +404,58 @@ export default function App() {
               </button>
             ))}
           </div>
+          <div className="class-modes" role="group" aria-label={lang === "en" ? "Character presentation" : "Hiển thị nhân vật"}>
+            <button aria-pressed={!advanced} onClick={() => setAdvanced(false)}>{info.base}</button>
+            <button aria-pressed={advanced} onClick={() => setAdvanced(true)}>{info.advanced}</button>
+          </div>
+          <div className="class-scene">
+            <span className="class-watermark" aria-hidden="true">
+              {hero.base}
+            </span>
+            <div className="class-art">
+              <Art
+                key={hero.image}
+                name={hero.image}
+                alt={hero.name}
+                className="class-portrait scene-enter"
+              />
+            </div>
+            <div className="class-detail" aria-live="polite">
+              <h3>{hero.name}</h3>
+              <p className="class-path">{hero.path}</p>
+              <p>{hero.detail}</p>
+              <div className="skill-detail">
+                <span>{t.skill}</span>
+                <strong>{hero.skill}</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div className="class-paths section">
+          <details>
+            <summary>{info.paths} · {t.classes[character].base}</summary>
+            <div className="path-list">
+              {classPaths.filter(path => path[0] === t.classes[character].base).map(path => (
+                <ol key={path.join("-")}>{path.map((name, i) => <li key={name}><span>{name}</span>{i < path.length - 1 && <Arrow />}</li>)}</ol>
+              ))}
+            </div>
+            <p>{info.evolutionNote}</p>
+          </details>
+        </div>
+        <section className="beginner section" id="how-to-play" aria-labelledby="guide-title">
+          <div className="section-heading"><h2 id="guide-title">{info.title}</h2><p>{info.intro}</p></div>
+          <div className="guide-layout">
+            <ol className="guide-steps" aria-label={info.navigation}>
+              {info.steps.map((entry, i) => <li key={i}><button onClick={() => selectStep(i)} aria-pressed={step === i}><span>{String(i+1).padStart(2,"0")}</span>{entry.title}<Arrow /></button></li>)}
+            </ol>
+            <div className="guide-detail" ref={guideDetail} aria-live="polite">
+              <div className="guide-visual"><Art key={info.steps[step].image} name={info.steps[step].image} className="scene-enter" /></div>
+              <div className="guide-copy"><h3>{info.steps[step].title}</h3><p>{info.steps[step].body}</p><p className="guide-tip">{info.steps[step].tip}</p>
+                <button className="text-link" onClick={() => selectStep((step + 1) % info.steps.length)}>{step === info.steps.length-1 ? info.start : info.next}<Arrow /></button>
+              </div>
+            </div>
+          </div>
+          <p className="caption">{info.demo}</p>
         </section>
         <section className="equipment section" aria-labelledby="gear-title">
           <div className="gear-heading">
@@ -578,7 +522,9 @@ export default function App() {
             className={`system-stage ${feature.kind === "capture" ? "is-capture" : ""}`}
           >
             <Art
+              key={feature.image}
               name={feature.image}
+              className="scene-enter"
               alt={feature.kind === "capture" ? t.screenAlt : ""}
             />
             <div className="system-copy" aria-live="polite">
@@ -595,24 +541,15 @@ export default function App() {
             <h2 id="gameplay-title">{t.galleryTitle}</h2>
             <p>{t.galleryIntro}</p>
           </div>
-          <div className="gameplay-planes">
-            <figure>
-              <Art
-                name="game-inventory"
-                alt={`${t.screenAlt}: ${t.inventory}`}
-              />
-              <figcaption>
-                {t.inventory} <span>1.2.1 · ANDROID</span>
-              </figcaption>
-            </figure>
-            <figure>
-              <Art name="game-raid" alt={`${t.screenAlt}: ${t.raid}`} />
-              <figcaption>
-                {t.raid}
-                <span>1.2.1 · ANDROID</span>
-              </figcaption>
-            </figure>
+          <div className="gameplay-planes beta-gallery">
+            {["beta-combat", "beta-quest", "beta-inventory"].map((name, i) => <figure key={name}>
+              <Art name={name} alt={`${t.screenAlt}: ${info.galleryLabels[i]}`} />
+              <figcaption>{info.galleryLabels[i]}<span>{t.gameLabel}</span></figcaption>
+            </figure>)}
           </div>
+        </section>
+        <section className="creator section" id="creator" aria-labelledby="creator-title">
+          <div className="creator-heading"><h2 id="creator-title">{t.creatorTitle}</h2><div><p className="creator-name">{t.creatorLine}</p><p>{t.creatorIntro}</p><p className="creator-collaborator">{lang === "en" ? "Official website developed by" : "Website chính thức được phát triển bởi"}<br/><strong>Henry Parker (Nguyen Manh Tuan Hưng)</strong></p></div></div>
         </section>
         <section
           className="download section"
@@ -659,6 +596,7 @@ export default function App() {
                         <code>{release.commit}</code>
                       </dd>
                     </div>
+                    <div><dt>{info.package}</dt><dd><code>{release.packageId}</code></dd></div>
                     <div>
                       <dt>{t.checksum}</dt>
                       <dd>

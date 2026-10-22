@@ -4,7 +4,7 @@ Abyss Adventure — a collaborative dark-fantasy dungeon RPG project by Phi Nguy
 
 **Live:** https://abyss-adventure.github.io/
 
-Current website Android download: **QA build 1.2.1 (61)**. Test Tools are enabled. The APK is debug-signed, not production-signed, and intended for testing only. See [the QA release](https://github.com/abyss-adventure/abyss-adventure.github.io/releases/tag/android-1.2.1-61-phi-qa) for the APK and SHA-256.
+Current download: **Android Open Beta 1.0.0-open.2 (66)**, package `com.nah.abyssadventure.beta`, Android 7.0+. [Approved install-fix release](https://github.com/haohao2766-sudo/ABYSS-ADVENTURE/releases/tag/open-beta-v1.0-android-install-fix1). No QA Test Tools. This release repairs Android packaging, with unchanged gameplay; physical-phone compatibility is unverified.
 
 ## Run
 
@@ -22,12 +22,12 @@ Open the printed root URL directly. The site has a single route with section anc
 
 ## Architecture
 
-React + TypeScript + Vite; GSAP ScrollTrigger controls the title push, source-to-world reveal and subtle portrait motion. Native browser scroll remains in control. CSS sticky scenes are short and disappear in reduced-motion mode. No WebGL, smoothing library or remote font request.
+React + TypeScript + Vite; GSAP ScrollTrigger controls the title push and subtle portrait motion. Native browser scroll remains in control. CSS sticky scenes are short and disappear in reduced-motion mode. No WebGL, smoothing library or remote font request.
 
 - `src/content.ts`: centralized EN/VI communication strings, creator placeholders and release metadata.
 - `src/App.tsx`: semantic scenes, selection controls, language persistence, one opt-in audio instance.
 - `src/style.css`: typography, materials, responsive scenes, motion fallback and safe-area rules.
-- `public/media/`: optimized copies of original game art and real Android captures.
+- `public/media/`: optimized copies of original game art and authentic browser captures of the approved APK payload.
 - `public/asset-inventory.json`: original provenance, dimensions and sizes.
 - `src/image-dimensions.json`: intrinsic dimensions prevent lazy-image layout shifts.
 - `reports/`: visual evidence, runtime results and performance/acceptance notes.
@@ -47,8 +47,8 @@ See [CONTENT-EDITING.md](CONTENT-EDITING.md). Do not rewrite the UI to change re
 
 ## QA
 
-`npm run check` checks translation structure, canonical names, assets, release metadata and generated root asset paths. `node scripts/language-qa.mjs` verifies switching, persistence, scroll/audio continuity, keyboard/touch access and mobile fit. `node scripts/qa.mjs` runs Chrome and WebKit responsive interaction checks against the production preview on port4174 (override `QA_URL`). `node scripts/screens.mjs` captures the current local surface; adjust its URL if needed. Browser binaries are local QA dependencies, not deployment dependencies.
+`npm run check` checks translation structure, canonical names, assets, release metadata and generated root asset paths. `node scripts/language-qa.mjs` verifies switching, persistence, scroll/audio continuity, keyboard/touch access and mobile fit. `node scripts/qa.mjs` runs Chromium and WebKit responsive interaction and accessibility checks against the production preview on port4174 (override `QA_URL`). `node scripts/screens.mjs` captures the current local surface; adjust its URL if needed. Browser binaries are local QA dependencies, not deployment dependencies.
 
-Original game artwork is preserved, not regenerated. The source-to-world sequence is a promotional explanation, **not an invented historical prototype**. Android captures contain genuine test UI. The Android download is an explicitly marked preview/test build, not a stable release. No public iOS download is offered.
+Original game artwork is preserved, not regenerated. Current captures are genuine browser renders of the verified APK payload, not physical Android-device captures. The download is an Open Beta, not a claim of complete balance or universal device compatibility. No public iOS download is offered.
 
 Game content/art is attributed to its original creator; this repository does not grant new reuse rights over the game assets. The project credit is shared by Phi Nguyễn and Henry Parker. The official website was created by Henry Parker (Nguyen Manh Tuan Hưng).
