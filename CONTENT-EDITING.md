@@ -14,7 +14,7 @@ Awaiting Phi's supplied and approved material:
 3. Original prototype screenshot (with date/provenance).
 4. Approved creator/social links.
 
-Empty creator fields are hidden from the public page; `creatorStory` in `src/content.ts` holds the approved material when it arrives. Current dated entries describe verified repository activity on 6–7 October2026, not the project's start or the creator's personal history. Once facts arrive, update both languages and replace the placeholder labels. Do not convert the source-data reveal into a historical before/after without a real historical image.
+Empty creator fields are hidden from the public page; `creatorStory` in `src/content.ts` holds the approved material when it arrives. No creator biography or development history is inferred. Once facts arrive, update both languages and replace the placeholder labels. Keep creator history hidden until approved material arrives.
 
 ## Artwork and screenshots
 
@@ -26,14 +26,15 @@ No AI-generated images are used. Social preview is an original-art composition; 
 
 ## Android release
 
-1. Obtain an approved APK and verify its SHA-256 locally.
-2. Publish it through GitHub Releases on `abyss-adventure/abyss-adventure.github.io`. Mark prerelease while it is a preview/test candidate.
-3. Update `release` in `src/content.ts`: version, build, byte size, date, exact game commit, checksum, filename and tag. Source commit points to the game; site commit is independent.
-4. Update the fallback release link in `index.html` if the tag changes. Release status copy is in both language objects.
-5. Update the pinned candidate assertions in `scripts/check.mjs` only as part of an intentional release update.
-6. Verify the public download bytes/checksum and both-language metadata.
+1. Verify the latest Phi-approved release in `haohao2766-sudo/ABYSS-ADVENTURE` and its attached install evidence.
+2. Download the APK read-only and verify its published SHA-256; do not rebuild or republish it from the website repository.
+3. Update `release` in `src/content.ts`: version, build, byte size, date, package, exact game commit, checksum, filename and tag. Source commit points to the game; site commit is independent.
+4. Synchronize `index.html` fallback/structured data, paired EN/VI release copy and `scripts/check.mjs` assertions.
+5. Run build, content checks and browser QA, then verify the live link and downloaded checksum.
 
-Current website download: internal QA package `com.nah.abyssadventure.qa`, version 1.2.1 build 62. Test Tools are enabled; the APK is debug-signed, not production-signed, and intended for testing only. State those caveats clearly. GitHub Releases provide the APK; never commit the binary into Git history.
+Current download: Android Open Beta `1.0.0-open.2` (66), package `com.nah.abyssadventure.beta`, release `open-beta-v1.0-android-install-fix1`. No QA Test Tools. This is an installation packaging repair, not a gameplay rebalance. Emulator validation is recorded by the release; physical-phone compatibility remains unverified.
+
+Current captures (`beta-world`, `beta-party`, `beta-inventory`, `beta-craft`, `beta-quest`, `beta-combat`, `beta-summon`) come from a fresh save in the verified APK's extracted web payload, served unchanged locally. They are browser captures, not physical-device captures. No resources, flags or game state were injected. Older `game-*` captures are retained historically but are not rendered as current gameplay. `public/game-reference.json` records the current source bundle hash, canonical maps and full class paths. `src/game-guide.ts` holds the paired beginner guide; preserve its parity and source grounding.
 
 ## iOS
 

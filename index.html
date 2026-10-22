@@ -7,10 +7,10 @@
       content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     />
     <meta name="theme-color" content="#080c0d" />
-    <title>Abyss Adventure — A world built one layer at a time</title>
+    <title>Abyss Adventure — Android Open Beta</title>
     <meta
       name="description"
-      content="Descend into Abyss Adventure, a collaborative dark-fantasy dungeon RPG project by Phi Nguyễn and Henry Parker. Original game concept and creative direction by Phi Nguyễn. Discover its world, classes and equipment, and try the Android preview."
+      content="Descend into Abyss Adventure, a collaborative dark-fantasy dungeon RPG project by Phi Nguyễn and Henry Parker. Original game concept and creative direction by Phi Nguyễn. Explore ten maps, discover class evolution paths and learn to play. Download the Android Open Beta, version 1.0.0-open.2."
     />
     <link
       rel="canonical"
@@ -25,7 +25,7 @@
     />
     <meta
       property="og:description"
-      content="A world built one layer at a time. Abyss Adventure is a project by Phi Nguyễn and Henry Parker, with original game concept and creative direction by Phi Nguyễn. Discover the world and try the Android preview."
+      content="A world built one layer at a time. Abyss Adventure is a project by Phi Nguyễn and Henry Parker, with original game concept and creative direction by Phi Nguyễn. Explore the world and download the Android Open Beta."
     />
     <meta
       property="og:url"
@@ -48,7 +48,7 @@
     />
     <meta
       name="twitter:description"
-      content="A dark-fantasy dungeon RPG project by Phi Nguyễn and Henry Parker. Original game concept and creative direction by Phi Nguyễn. Explore the world and try the Android preview."
+      content="A dark-fantasy dungeon RPG project by Phi Nguyễn and Henry Parker. Original game concept and creative direction by Phi Nguyễn. Explore the world and download the Android Open Beta."
     />
     <meta
       name="twitter:image"
@@ -61,26 +61,22 @@
         "name": "Abyss Adventure",
         "url": "https://abyss-adventure.github.io/",
         "image": "https://abyss-adventure.github.io/media/social.jpg",
-        "creator": [
-          { "@type": "Person", "name": "Phi Nguyễn" },
-          { "@type": "Person", "name": "Henry Parker" }
-        ],
+        "creator": { "@type": "Person", "name": "Phi Nguyễn" },
+        "contributor": { "@type": "Person", "name": "Henry Parker" },
+        "softwareVersion": "1.0.0-open.2",
+        "operatingSystem": "Android 7.0+",
+        "downloadUrl": "https://github.com/haohao2766-sudo/ABYSS-ADVENTURE/releases/download/open-beta-v1.0-android-install-fix1/Abyss-Adventure-Open-Beta-v1.0-Install-Fix.apk",
         "genre": "Dark fantasy role-playing game",
         "gamePlatform": "Android",
         "inLanguage": ["en", "vi"],
-        "description": "Abyss Adventure is a collaborative dark-fantasy dungeon RPG project by Phi Nguyễn and Henry Parker. Original game concept and creative direction by Phi Nguyễn. Android preview build; iOS coming soon."
+        "description": "Abyss Adventure is a collaborative dark-fantasy dungeon RPG project by Phi Nguyễn and Henry Parker. Original game concept and creative direction by Phi Nguyễn. Android Open Beta; no QA Test Tools. iOS coming soon."
       }
     </script>
   </head>
   <body>
-    <!--
-THESIS: A native-scroll descent into Abyss Adventure, not a stacked feature-card landing page.
-OWN-WORLD: Original cavern and pixel art; limestone Alegreya, brass controls, cold underground space.
-STORY: Discover the world, verified development, character decisions and actual gameplay; download the honest Android preview.
-FIRST VIEWPORT: Huge pale title centered in the real Blackwake cavern; preview action at top right, descent cue below.
-FORM: Continuous cavern descent, grounded candidate 3, surface seed 6cf38a33. User-pinned direction takes precedence. Short sticky scenes alternate with open editorial passages.
-FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
--->
+    <!-- Original game artwork, native-scroll descent, verified class paths and beginner guide.
+         Current Open Beta metadata is checked against the approved release in scripts/check.mjs.
+         Gameplay and rewards run only in the game, not on this promotional website. -->
     <div id="root"></div>
     <noscript
       ><main
@@ -111,11 +107,14 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         <p>
           <a
             style="color: #c4ad79"
-            href="https://github.com/abyss-adventure/abyss-adventure.github.io/releases/tag/android-1.2.1-62-phi-qa"
-            >Android — Available. Build 62 QA download and release details</a
+            href="https://github.com/haohao2766-sudo/ABYSS-ADVENTURE/releases/download/open-beta-v1.0-android-install-fix1/Abyss-Adventure-Open-Beta-v1.0-Install-Fix.apk"
+            >Android Open Beta — 1.0.0-open.2 (66), 267.7 MB. Download APK</a
           >
         </p>
-        <p>iOS — Coming soon.</p>
+        <p lang="en">Android 7.0+. No QA Test Tools. This update repairs installation packaging, with no gameplay change. Physical-device compatibility remains unverified.</p>
+        <p lang="vi">Android 7.0+. Không có Công cụ kiểm thử QA. Bản cập nhật sửa đóng gói cài đặt, giữ nguyên gameplay. Chưa xác minh khả năng tương thích điện thoại thực.</p>
+        <p>SHA-256: <code>6aafc09b594883db9b5ea09f10b757d5a08d527cab81963870a891eab38e66ee</code></p>
+        <p>iOS — Coming soon / Sắp ra mắt.</p>
       </main></noscript
     >
     <script type="module" src="/src/main.tsx"></script>
