@@ -27,10 +27,10 @@ No AI-generated images are used. Social preview is an original-art composition; 
 ## Android release
 
 1. Verify the latest Phi-approved release in `haohao2766-sudo/ABYSS-ADVENTURE` and its attached install evidence.
-2. Download the APK read-only and verify its published SHA-256; do not rebuild or republish it from the website repository.
+2. Download the APK read-only and verify its published SHA-256; never rebuild or re-sign it. If the approved upstream is private, a byte-identical public mirror in the website repository is required for an anonymous download.
 3. Update `release` in `src/content.ts`: version, build, byte size, date, package, exact game commit, checksum, filename and tag. Source commit points to the game; site commit is independent.
 4. Synchronize `index.html` fallback/structured data, paired EN/VI release copy and `scripts/check.mjs` assertions.
-5. Run build, content checks and browser QA, then verify the live link and downloaded checksum.
+5. Run build, content checks and browser QA, then verify the live link and downloaded checksum without GitHub authentication.
 
 Current download: Android Open Beta `1.0.0-open.2` (66), package `com.nah.abyssadventure.beta`, release `open-beta-v1.0-android-install-fix1`. No QA Test Tools. This is an installation packaging repair, not a gameplay rebalance. Emulator validation is recorded by the release; physical-phone compatibility remains unverified.
 

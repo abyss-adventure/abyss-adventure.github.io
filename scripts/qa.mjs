@@ -8,7 +8,7 @@ const viewports=live?[[390,844],[1440,900]]:[[360,800],[390,844],[768,1024],[144
 const output='output/playwright/website2';await fs.mkdir(output,{recursive:true});
 const results=[];const accessibility=[];
 const sha='6aafc09b594883db9b5ea09f10b757d5a08d527cab81963870a891eab38e66ee';
-const apk='https://github.com/haohao2766-sudo/ABYSS-ADVENTURE/releases/download/open-beta-v1.0-android-install-fix1/Abyss-Adventure-Open-Beta-v1.0-Install-Fix.apk';
+const apk='https://github.com/abyss-adventure/abyss-adventure.github.io/releases/download/open-beta-v1.0-android-install-fix1/Abyss-Adventure-Open-Beta-v1.0-Install-Fix.apk';
 for (const [engine,type] of [['chromium',chromium],['webkit',webkit]]) {
  const browser=await type.launch({headless:true});
  try {for(const [width,height] of viewports){

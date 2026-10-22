@@ -11,8 +11,9 @@ export const release = {
   "sha256": "6aafc09b594883db9b5ea09f10b757d5a08d527cab81963870a891eab38e66ee",
   "filename": "Abyss-Adventure-Open-Beta-v1.0-Install-Fix.apk",
   "tag": "open-beta-v1.0-android-install-fix1",
-  "repository": "https://github.com/haohao2766-sudo/ABYSS-ADVENTURE",
-  "source": "https://github.com/haohao2766-sudo/ABYSS-ADVENTURE/tree/6e35a4221a27916aae0599a9cd00645f3d48ee20/releases/open-beta-v1.0"
+  "repository": "https://github.com/abyss-adventure/abyss-adventure.github.io",
+  "upstreamRepository": "https://github.com/haohao2766-sudo/ABYSS-ADVENTURE",
+  "source": "https://github.com/abyss-adventure/abyss-adventure.github.io/releases/tag/open-beta-v1.0-android-install-fix1"
 } as const;
 export const releaseUrl = `${release.repository}/releases/tag/${release.tag}`;
 export const downloadUrl = `${release.repository}/releases/download/${release.tag}/${release.filename}`;
@@ -307,7 +308,7 @@ export const copy = {
     "henryProfileLabel": "Henry Parker on GitHub",
     "websiteProfileLabel": "Henry Parker (Nguyen Manh Tuan Hưng) on GitHub",
     "openGithubProfile": "Open GitHub profile",
-    "source": "Game source",
+    "source": "Release provenance",
     "back": "Back to the surface",
     "mute": "Ambience is optional. Sound is off until you choose it."
   },
@@ -599,7 +600,7 @@ export const copy = {
     "henryProfileLabel": "Henry Parker trên GitHub",
     "websiteProfileLabel": "Henry Parker (Nguyen Manh Tuan Hưng) trên GitHub",
     "openGithubProfile": "Mở hồ sơ GitHub",
-    "source": "Mã nguồn game",
+    "source": "Thông tin bản phát hành",
     "back": "Trở về mặt đất",
     "mute": "Âm thanh nền là tùy chọn. Chỉ phát khi bạn chủ động bật."
   }
