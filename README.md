@@ -4,7 +4,7 @@ Abyss Adventure — a collaborative dark-fantasy dungeon RPG project by Phi Nguy
 
 **Live:** https://abyss-adventure.github.io/
 
-Current download: **Android Open Beta 1.0.0-open.2 (66)**, package `com.nah.abyssadventure.beta`, Android 7.0+. [Approved install-fix release](https://github.com/haohao2766-sudo/ABYSS-ADVENTURE/releases/tag/open-beta-v1.0-android-install-fix1). No QA Test Tools. This release repairs Android packaging, with unchanged gameplay; physical-phone compatibility is unverified.
+Current download: **Android Open Beta 1.0.0-open.2 (66)**, package `com.nah.abyssadventure.beta`, Android 7.0+. [Approved install-fix release](https://github.com/abyss-adventure/abyss-adventure.github.io/releases/tag/open-beta-v1.0-android-install-fix1). No QA Test Tools. This release repairs Android packaging, with unchanged gameplay; physical-phone compatibility is unverified.
 
 ## Run
 

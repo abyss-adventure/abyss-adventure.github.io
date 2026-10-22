@@ -10,7 +10,7 @@ A bilingual eight-step How to Play guide connects characters, fields, party, Exp
 
 ## Source and release evidence
 
-- Public release `open-beta-v1.0-android-install-fix1`, published 2026-10-22. No newer release was listed by the game repository API at implementation time. This is a prerelease/Open Beta, not a stable release.
+- Approved upstream release `open-beta-v1.0-android-install-fix1`, published 2026-10-22 in the private game repository. No newer release was listed by the game repository API at implementation time. This is a prerelease/Open Beta, not a stable release.
 - Approved game release commit: `6e35a4221a27916aae0599a9cd00645f3d48ee20`; authoritative payload originates from approved Site `6aaba20c7efc640e581ce85f10ddc864b5e4182d`.
 - APK: `Abyss-Adventure-Open-Beta-v1.0-Install-Fix.apk`, 267,688,710 bytes, version `1.0.0-open.2`, versionCode 66, package `com.nah.abyssadventure.beta`, minimum API24 / Android7.0.
 - Downloaded APK SHA-256 independently matches `6aafc09b594883db9b5ea09f10b757d5a08d527cab81963870a891eab38e66ee`.
@@ -18,6 +18,10 @@ A bilingual eight-step How to Play guide connects characters, fields, party, Exp
 - `public/game-reference.json` records the current runtime source/hash and extracted canonical maps/class paths. The historical root TypeScript project and root `RELEASE.md` are not the authoritative runtime for this release.
 - Published install-validation evidence records rejection of the old compressed-resource-table APK, followed by successful fixed APK installation, launch, reinstallation and relaunch on an Android API30 emulator. This task does not claim a new emulator test or any physical-phone test.
 - This is an installation packaging fix. No QA Test Tools are present and no gameplay rebalance is claimed. The main download, EN/VI metadata, fallback and structured data point directly to the game owner's current release. iOS remains Coming Soon.
+
+## Anonymous download correction
+
+Live verification found that the supplied game release URL returned HTTP404 without authentication: the game repository is private. The website itself had deployed correctly. The approved APK was therefore mirrored byte-for-byte as an Open Beta prerelease in the public official website repository, under the same release tag. The mirror contains the verified APK and checksum; no rebuilding, signing, private-source publication or game-repository change occurred. The website, fallback, structured data and release-provenance link use the public mirror. Both host provenance and original game source commit are retained in metadata. The APK must be anonymously downloadable and its full bytes/hash verified before completion is declared.
 
 ## Assets and capture method
 
@@ -30,7 +34,7 @@ Before/after captures: `output/playwright/website2/` (local only). Small represe
 ## Verification
 
 - `npm ci`: clean locked install, zero reported dependency vulnerabilities.
-- `npm run build`, `npm run check` (755 checks), `npx tsc --noEmit`, `git diff --check`: passed.
+- `npm run build`, `npm run check` (756 checks), `npx tsc --noEmit`, `git diff --check`: passed.
 - Chromium and WebKit: 360×800, 390×844, 768×1024 and 1440×900. Ten map controls, previous/next, six class presentations, four paths per family, eight guide steps, equipment inspection, twelve systems, EN/VI persistence/selection/keyboard, download metadata and overflow checks.
 - Axe WCAG A/AA and WCAG2.1 AA: zero violations in Chromium at 390px and 1440px, both EN/VI. Automated results do not replace assistive-technology or physical-device acceptance.
 - Native-scroll opening, reduced-motion access, opt-in audio, language/audio continuity and section deep links tested separately. Existing focused audio/navigation/language helpers were retained and updated for the new surface.
