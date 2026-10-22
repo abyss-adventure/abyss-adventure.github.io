@@ -1,0 +1,253 @@
+{
+  "url": "http://127.0.0.1:4174/",
+  "results": [
+    {
+      "engine": "chromium",
+      "width": 360,
+      "height": 800,
+      "passed": true,
+      "checks": [
+        "ten maps",
+        "six class spotlights",
+        "four paths per family",
+        "eight guide steps",
+        "equipment selection",
+        "twelve systems",
+        "EN/VI selection and persistence",
+        "keyboard",
+        "download metadata",
+        "no overflow",
+        "no runtime or asset errors"
+      ],
+      "initial": {
+        "nodes": 440,
+        "cls": 0,
+        "lcpMs": 144,
+        "transferBytes": 676742
+      },
+      "finalNodes": 440,
+      "physicalDevice": false
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "height": 844,
+      "passed": true,
+      "checks": [
+        "ten maps",
+        "six class spotlights",
+        "four paths per family",
+        "eight guide steps",
+        "equipment selection",
+        "twelve systems",
+        "EN/VI selection and persistence",
+        "keyboard",
+        "download metadata",
+        "no overflow",
+        "no runtime or asset errors"
+      ],
+      "initial": {
+        "nodes": 440,
+        "cls": 0,
+        "lcpMs": 76,
+        "transferBytes": 676742
+      },
+      "finalNodes": 440,
+      "physicalDevice": false
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "height": 1024,
+      "passed": true,
+      "checks": [
+        "ten maps",
+        "six class spotlights",
+        "four paths per family",
+        "eight guide steps",
+        "equipment selection",
+        "twelve systems",
+        "EN/VI selection and persistence",
+        "keyboard",
+        "download metadata",
+        "no overflow",
+        "no runtime or asset errors"
+      ],
+      "initial": {
+        "nodes": 440,
+        "cls": 0.007781372056342662,
+        "lcpMs": 72,
+        "transferBytes": 676742
+      },
+      "finalNodes": 440,
+      "physicalDevice": false
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "height": 900,
+      "passed": true,
+      "checks": [
+        "ten maps",
+        "six class spotlights",
+        "four paths per family",
+        "eight guide steps",
+        "equipment selection",
+        "twelve systems",
+        "EN/VI selection and persistence",
+        "keyboard",
+        "download metadata",
+        "no overflow",
+        "no runtime or asset errors"
+      ],
+      "initial": {
+        "nodes": 440,
+        "cls": 0.013822857599036028,
+        "lcpMs": 76,
+        "transferBytes": 950826
+      },
+      "finalNodes": 440,
+      "physicalDevice": false
+    },
+    {
+      "engine": "webkit",
+      "width": 360,
+      "height": 800,
+      "passed": true,
+      "checks": [
+        "ten maps",
+        "six class spotlights",
+        "four paths per family",
+        "eight guide steps",
+        "equipment selection",
+        "twelve systems",
+        "EN/VI selection and persistence",
+        "keyboard",
+        "download metadata",
+        "no overflow",
+        "no runtime or asset errors"
+      ],
+      "initial": {
+        "nodes": 440,
+        "cls": 0,
+        "lcpMs": 254,
+        "transferBytes": 457717
+      },
+      "finalNodes": 440,
+      "physicalDevice": false
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "height": 844,
+      "passed": true,
+      "checks": [
+        "ten maps",
+        "six class spotlights",
+        "four paths per family",
+        "eight guide steps",
+        "equipment selection",
+        "twelve systems",
+        "EN/VI selection and persistence",
+        "keyboard",
+        "download metadata",
+        "no overflow",
+        "no runtime or asset errors"
+      ],
+      "initial": {
+        "nodes": 440,
+        "cls": 0,
+        "lcpMs": 109,
+        "transferBytes": 457717
+      },
+      "finalNodes": 440,
+      "physicalDevice": false
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "height": 1024,
+      "passed": true,
+      "checks": [
+        "ten maps",
+        "six class spotlights",
+        "four paths per family",
+        "eight guide steps",
+        "equipment selection",
+        "twelve systems",
+        "EN/VI selection and persistence",
+        "keyboard",
+        "download metadata",
+        "no overflow",
+        "no runtime or asset errors"
+      ],
+      "initial": {
+        "nodes": 440,
+        "cls": 0,
+        "lcpMs": 115,
+        "transferBytes": 457717
+      },
+      "finalNodes": 440,
+      "physicalDevice": false
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "height": 900,
+      "passed": true,
+      "checks": [
+        "ten maps",
+        "six class spotlights",
+        "four paths per family",
+        "eight guide steps",
+        "equipment selection",
+        "twelve systems",
+        "EN/VI selection and persistence",
+        "keyboard",
+        "download metadata",
+        "no overflow",
+        "no runtime or asset errors"
+      ],
+      "initial": {
+        "nodes": 440,
+        "cls": 0,
+        "lcpMs": 130,
+        "transferBytes": 655893
+      },
+      "finalNodes": 440,
+      "physicalDevice": false
+    },
+    {
+      "motion": true,
+      "optInAudio": true,
+      "languageKeepsAudio": true,
+      "deepLink": true
+    }
+  ],
+  "accessibility": [
+    {
+      "engine": "chromium",
+      "width": 390,
+      "lang": "en",
+      "violations": 0
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "lang": "vi",
+      "violations": 0
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "lang": "en",
+      "violations": 0
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "lang": "vi",
+      "violations": 0
+    }
+  ]
+}

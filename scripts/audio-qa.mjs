@@ -1,5 +1,5 @@
 import {chromium} from 'playwright';import assert from 'node:assert/strict';import fs from 'node:fs/promises';
-const b=await chromium.launch({channel:'chrome'});const context=await b.newContext();const p=await context.newPage();
+const b=await chromium.launch({});const context=await b.newContext();const p=await context.newPage();
 const url=process.env.QA_URL||'http://127.0.0.1:4174/';
 await p.addInitScript(()=>{window.__audioInstances=[];const Original=window.Audio;window.Audio=class extends Original{constructor(...args){super(...args);window.__audioInstances.push(this)}}});
 await p.goto(url);assert.equal(await p.evaluate(()=>window.__audioInstances.filter(a=>!a.paused).length),0);
